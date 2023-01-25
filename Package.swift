@@ -23,33 +23,28 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "JioMeetLogger",
-            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v1_1_1/JioMeetLogger.xcframework.zip",
-            checksum: "a258d128f8eefbf0c7da8d031f28af36b50791f2ca5866a9e11b99338f25cdff"
+            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v1_1_2/JioMeetLogger.xcframework.zip",
+            checksum: "c427bf65e0ce4d6454eec42b6fbd6358a56f94f3db336325a21215834242dca2"
         ),
         .binaryTarget(
             name: "JioMeetManager",
-            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v1_1_1/JioMeetManager.xcframework.zip",
-            checksum: "d26bf0c2f6ea81bc23b8b4f820f639379245ca59e4792a84c0cd7f4216fc7835"
+            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v1_1_2/JioMeetManager.xcframework.zip",
+            checksum: "569afb2023560ace6113f3129d981c6d799705ea46058cd2527fbbe6930d3033"
         ),
         .binaryTarget(
             name: "JioMeetNetwork",
-            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v1_1_1/JioMeetNetwork.xcframework.zip",
-            checksum: "2c3da082739a65544e5c12528fba6d27f5446d7180acb25b57848f0d7e87659a"
+            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v1_1_2/JioMeetNetwork.xcframework.zip",
+            checksum: "d2c446cd3cd7802db02d0c1d02c0bdc72613169fe078ba6d5af7fa40e2fe428f"
         ),
         .binaryTarget(
             name: "JioMeetRTC",
-            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v1_1_1/JioMeetRTC.xcframework.zip",
-            checksum: "f4c65d45fd6e93943e8226246b87be933c6533cb073e77891c0e4ee1e1ea52e6"
+            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v1_1_2/JioMeetRTC.xcframework.zip",
+            checksum: "086a858d83102f844ab30a2eca059c886a66e250f5206ea844c4a1ff4f2b9124"
         ),
         .binaryTarget(
-            name: "JioMeetWatchParty",
-            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v1_1_1/JioMeetWatchParty.xcframework.zip",
-            checksum: "540c74a0093d46f884f3eaa74f68d6999aa78882257973c1b34cdd6a2ec14b7b"
-        ),
-        .binaryTarget(
-            name: "FLAnimatedImage",
-            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v1_1_1/FLAnimatedImage.xcframework.zip",
-            checksum: "6d626ca8bf1d1cd4d07592c396303e7c25f68cf12821f04a5cecf26e3332f082"
+            name: "JVWatchPartySDK",
+            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v1_1_2/JVWatchPartySDK.xcframework.zip",
+            checksum: "f73fdc7539e0f70076c875ff3a23af08686397ece32fd500a679f6d7aaf656d0"
         ),
         .target(
             name: "JioMeetWatchPartyTarget",
@@ -58,8 +53,7 @@ let package = Package(
                 .target(name: "JioMeetManager"),
                 .target(name: "JioMeetNetwork"),
                 .target(name: "JioMeetRTC"),
-                .target(name: "JioMeetWatchParty"),
-                .target(name: "FLAnimatedImage"),
+                .target(name: "JVWatchPartySDK"),
                 .product(name: "RtcBasic", package: "JioMeetRtcEngine_iOS"),
                 .product(name: "AINS", package: "JioMeetRtcEngine_iOS"),
                 .product(name: "ContentInspect", package: "JioMeetRtcEngine_iOS"),
