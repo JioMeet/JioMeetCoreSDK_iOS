@@ -10,6 +10,6 @@ Pod::Spec.new do |spec|
     spec.platform     = :ios, '10'
     spec.source       = { :http => 'https://storage.googleapis.com/cpass-sdk/libs/iOS/public/templates/contact_center/v1_1_1/JioMeetSDK_iOS_1_1_1.zip' }
     spec.vendored_frameworks = 'libs/JioMeetSDK.xcframework'
-    spec.dependency = 'JioMeetCore_iOS', '2.1.1'
+    spec.dependency 'JioMeetCore_iOS', '2.1.1'
   end
   
