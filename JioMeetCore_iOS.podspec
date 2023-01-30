@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = 'JioMeetCore_iOS'
-    spec.version      = '2.1.0'
+    spec.version      = '2.1.1'
     spec.summary      = 'JioMeet Core SDKs'
     spec.description  = 'iOS library for JioMeet A/V communication and data channel service.'
     spec.homepage     = 'https://jiomeetpro.jio.com'
