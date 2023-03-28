@@ -17,7 +17,7 @@ let package = Package(
         .package(
             name: "JioMeetRtcEngine_iOS",
             url: "https://github.com/JioMeet/JioMeet-rtc-engine-ios.git",
-            from: "3.7.1"
+            from: "3.7.2"
         ),
         .package(
             name: "SDWebImageSwiftUI",
