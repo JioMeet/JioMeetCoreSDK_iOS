@@ -20,6 +20,11 @@ let package = Package(
             from: "3.7.2"
         ),
         .package(
+            name: "SDWebImage",
+            url: "https://github.com/SDWebImage/SDWebImage.git",
+            from: "5.10.0"
+        ),
+        .package(
             name: "SDWebImageSwiftUI",
             url: "https://github.com/SDWebImage/SDWebImageSwiftUI.git",
             from: "2.0.0"
@@ -43,7 +48,8 @@ let package = Package(
                 .target(name: "JioMeetWatchParty"),
                 .product(name: "RTC", package: "JioMeetRtcEngine_iOS"),
                 .product(name: "RTM", package: "JioMeetRtcEngine_iOS"),
-                .product(name: "SDWebImageSwiftUI", package: "SDWebImageSwiftUI")
+                .product(name: "SDWebImageSwiftUI", package: "SDWebImageSwiftUI"),
+                .product(name: "SDWebImage", package: "SDWebImage")
             ],
             path: "Framework/Dependency",
             exclude: []
