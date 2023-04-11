@@ -18,32 +18,32 @@ let package = Package(
             name: "JioMeetRtcEngine_iOS",
             url: "https://github.com/JioMeet/JioMeet-rtc-engine-ios.git",
             "3.7.2"..<"3.7.3"
-        ),
-        .package(
-            name: "SDWebImageSwiftUI",
-            url: "https://github.com/SDWebImage/SDWebImageSwiftUI.git",
-            from: "2.2.0"
         )
     ],
     targets: [
         .binaryTarget(
             name: "JioMeetCoreSDK",
-            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v1_1_5/JioMeetCoreSDK.xcframework.zip",
-            checksum: "01776ef6b907562bede1842939f5a95cab6351afc5fbec35e88766f321d2b17c"
+            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v1_1_6/JioMeetCoreSDK.xcframework.zip",
+            checksum: "4034916dc0099cd81425b953f7c2d0d0b4980c720a7a9495b03ad874e600b57d"
         ),
         .binaryTarget(
             name: "JioMeetWatchParty",
-            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v1_1_5/JioMeetWatchParty.xcframework.zip",
-            checksum: "2ec80a6014796c47dc2654f369f72348d061e7228d312acdcafb137f16ecad2a"
+            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v1_1_6/JioMeetWatchParty.xcframework.zip",
+            checksum: "815446cab27ab9a780f76ee883bde70d09bee9bab7e37c4b1be403382fa18361"
+        ),
+        .binaryTarget(
+            name: "FLAnimatedImage",
+            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v1_1_1/FLAnimatedImage.xcframework.zip",
+            checksum: "6d626ca8bf1d1cd4d07592c396303e7c25f68cf12821f04a5cecf26e3332f082"
         ),
         .target(
             name: "JioMeetWatchPartyTarget",
             dependencies: [
                 .target(name: "JioMeetCoreSDK"),
                 .target(name: "JioMeetWatchParty"),
+                .target(name: "FLAnimatedImage"),
                 .product(name: "RTC", package: "JioMeetRtcEngine_iOS"),
-                .product(name: "RTM", package: "JioMeetRtcEngine_iOS"),
-                .product(name: "SDWebImageSwiftUI", package: "SDWebImageSwiftUI")
+                .product(name: "RTM", package: "JioMeetRtcEngine_iOS")
             ],
             path: "Framework/Dependency",
             exclude: []
