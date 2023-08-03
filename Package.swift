@@ -23,18 +23,18 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "JioMeetCoreSDK",
-            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v1_1_12/JioMeetCoreSDK.xcframework.zip",
-            checksum: "e35679c50ec166c6b47ee27b67365feab60f097aa41387dab1385027f54869be"
+            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v_1_1_13/JioMeetCoreSDK.xcframework.zip",
+            checksum: "9656eb6ce5329b6d393a792f5a3cce157b0fd50f7145002bce1a2dcd124104fd"
         ),
         .binaryTarget(
             name: "JioMeetWatchParty",
-            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v1_1_12/JioMeetWatchParty.xcframework.zip",
-            checksum: "2750004010201254494f0832cf08f5bf7509d783ee26f8e65c5d26e19aa8b88b"
+            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v_1_1_13/JioMeetWatchParty.xcframework.zip",
+            checksum: "a7c34672db90b840180abf5cd4c7d03858f2c90b06fea23bf37b832323d68dc4"
         ),
         .binaryTarget(
             name: "FLAnimatedImage",
-            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v1_1_12/FLAnimatedImage.xcframework.zip",
-            checksum: "cd5a7a1962b46796389a64c16d0c008cd81d7ec52b14b028c0bdbb02e9c7e147"
+            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v_1_1_13/FLAnimatedImage.xcframework.zip",
+            checksum: "c978264e5247de91adf4651d4eb513017a795bf7e8c43552e2827018746edc32"
         ),
         .target(
             name: "JioMeetWatchPartyTarget",
