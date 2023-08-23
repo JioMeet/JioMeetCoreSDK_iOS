@@ -1,5 +1,5 @@
 specVersion = '2.3.0'
-frameworkSourceUrl = 'https://storage.googleapis.com/cpass-sdk/libs/iOS/public/new_arch/2_3_0/JioMeetCoreSDK.xcframework.zip'
+frameworkSourceUrl = 'https://storage.googleapis.com/cpass-sdk/libs/iOS/public/new_arch/2_3_0/JioMeetUIFoundation.xcframework.zip'
 
 specAuthors = {
     'Rohit Kumar' => 'rohit41.kumar@ril.com',
@@ -18,16 +18,14 @@ licenseInfo = {
 }
 
 Pod::Spec.new do |spec|
-    spec.name         = 'JioMeetCoreSDK_iOS'
+    spec.name         = 'JioMeetUIFoundation_iOS'
     spec.version      = specVersion
-    spec.summary      = 'JioMeet iOS Core SDK'
+    spec.summary      = 'JioMeet iOS Core Methods and Extensions UI SDK'
     spec.description  = 'iOS library for JioMeet A/V communication and data channel service.'
     spec.homepage     = 'https://jiomeetpro.jio.com'
     spec.license      = { :type => 'Copyright', :text => 'COPYRIGHT 2022 JIO PLATFORMS LIMITED. ALL RIGHTS RESERVED.\n' }
     spec.author       = specAuthors
-    spec.platform     = :ios, '12'
+    spec.platform     = :ios, '13'
     spec.source       = { :http => frameworkSourceUrl }
-    spec.vendored_frameworks = 'JioMeetCoreSDK.xcframework'
-    spec.dependency 'JioMeetRtcEngine_iOS', '3.7.1.2'
-    spec.dependency 'JioMeetRtmKit_iOS', '1.5.1.0'
+    spec.vendored_frameworks = 'JioMeetUIFoundation.xcframework'
 end
