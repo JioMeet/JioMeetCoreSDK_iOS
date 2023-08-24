@@ -1,5 +1,5 @@
-specVersion = '2.3.0'
-frameworkSourceUrl = 'https://storage.googleapis.com/cpass-sdk/libs/iOS/public/new_arch/2_3_0/JioMeetCoreSDK.xcframework.zip'
+specVersion = '2.3.1'
+frameworkSourceUrl = 'https://storage.googleapis.com/cpass-sdk/libs/iOS/public/new_arch/2_3_1/JioMeetCoreSDK.xcframework.zip'
 
 specAuthors = {
     'Rohit Kumar' => 'rohit41.kumar@ril.com',
