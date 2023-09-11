@@ -18,23 +18,28 @@ let package = Package(
             name: "JioMeetRtcEngine_iOS",
             url: "https://github.com/JioMeet/JioMeet-rtc-engine-ios.git",
             "3.7.2"..<"3.7.3"
+        ),
+        .package(
+            name: "Lottie",
+            url: "https://github.com/airbnb/lottie-spm.git", 
+            from: "4.2.0"
         )
     ],
     targets: [
         .binaryTarget(
             name: "JioMeetCoreSDK",
-            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v1_1_14/JioMeetCoreSDK.xcframework.zip",
-            checksum: "e27f94842440a7e679f7c9ef63c2ac8ebbf79b2dbf4916b255aa4c30e37de556"
+            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v1_1_15/JioMeetCoreSDK.xcframework.zip",
+            checksum: "527f0e166e1b1c7513a5182f1dcaf4534b033fb0a4b866aa29a9c56034f7570a"
         ),
         .binaryTarget(
             name: "JioMeetWatchParty",
-            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v1_1_14/JioMeetWatchParty.xcframework.zip",
-            checksum: "f8216468906334621c156c0093440550a7c9d038b6f3303e47f11622fe0a506e"
+            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v1_1_15/JioMeetWatchParty.xcframework.zip",
+            checksum: "36c13b547e1932051abf4a683c4df3eea8bec6cc1e65646d24b1684ef448eb83"
         ),
         .binaryTarget(
             name: "FLAnimatedImage",
-            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v1_1_14/FLAnimatedImage.xcframework.zip",
-            checksum: "389a097071335b60963481cd313091803ff6cf7f4b8e87c1ff6289bf8733bc5d"
+            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/internal/jv_watch_party/v1_1_15/FLAnimatedImage.xcframework.zip",
+            checksum: "724c8b13ce5d0ab0981b1c51143f01b26387d269018d627ba80fbcefeb769252"
         ),
         .target(
             name: "JioMeetWatchPartyTarget",
@@ -43,7 +48,8 @@ let package = Package(
                 .target(name: "JioMeetWatchParty"),
                 .target(name: "FLAnimatedImage"),
                 .product(name: "RTC", package: "JioMeetRtcEngine_iOS"),
-                .product(name: "RTM", package: "JioMeetRtcEngine_iOS")
+                .product(name: "RTM", package: "JioMeetRtcEngine_iOS"),
+                .product(name: "Lottie", package: "Lottie"),
             ],
             path: "Framework/Dependency",
             exclude: []
