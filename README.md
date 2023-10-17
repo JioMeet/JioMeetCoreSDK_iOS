@@ -1977,7 +1977,7 @@ struct JMRoomDetails {
 | maxParticipants | Int | Max participants in the meeting.|
 | mediaEngine | JMRoomMediaEngine | Media Engine.|
 | ownerDetails | JMUser | Meeting Host.|
-| isWatermarkEnabled | Bool | Watermark profile based flag.|
+| isWatermarkEnabled | Bool | Watermark room level flag.|
 | isHardAudioMute | Bool | Force Mute flag for the meeting.|
 | isParticipantAudioEnabledoOnJoin | Bool | participants audio status on join.|
 | isParticipantVideoEnabledoOnJoin | Bool | participants video status on join.|
