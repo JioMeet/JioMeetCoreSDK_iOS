@@ -135,7 +135,7 @@ Please add `JioMeetCoreSDK_iOS` pod to your podfile and run `pod install --repo-
 target 'Your_App_Name' do
   use_frameworks!
   # Other Pods
-  pod 'JioMeetCoreSDK_iOS', '~> 2.6'
+  pod 'JioMeetCoreSDK_iOS', '~> 2.6.1'
 end
 ```
 
@@ -2204,7 +2204,7 @@ Go to your Podfile. Add `JioMeetScreenShareSDK_iOS` pod for your newly created b
 ```ruby
 target 'ScreenShareExtension' do
     use_frameworks!
-    pod 'JioMeetScreenShareSDK_iOS', '~> 2.6'
+    pod 'JioMeetScreenShareSDK_iOS', '~> 2.6.1'
 end
 ```
 
