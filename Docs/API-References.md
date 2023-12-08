@@ -120,7 +120,7 @@
 
 In this documentation, we'll guide you through the process of integrating methods for incorporating audio, video and joining rooms (meetings) within your application, covering essential functionalities and configurations for seamless communication experiences.
 
-![image info](./Images/core_flow.png)
+![image info](../Images/core_flow.png)
 
 ---
 
