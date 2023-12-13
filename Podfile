@@ -4,7 +4,7 @@
 target 'JioMeetCoreSdkDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'JioMeetCoreSDK_iOS', '~> 2.6'
+  pod 'JioMeetCoreSDK_iOS', '~> 2.7'
 
   # Pods for JioMeetCoreSdkDemo
 
