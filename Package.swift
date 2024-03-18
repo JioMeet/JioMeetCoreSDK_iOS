@@ -22,14 +22,14 @@ let package = Package(
 		.package(
 			name: "JioMeetMediaStackSDK",
 			url: "https://github.com/JioMeet/JMMediaStackSDK_iOS.git",
-				.upToNextMajor(from: "1.0.0")
+			.exact("1.0.4")
 		)
 	],
 	targets: [
 		.binaryTarget(
 			name: "JioMeetCoreSDK",
-			url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/public/new_arch/v_3_0_0_alpha_4/JioMeetCoreSDK.xcframework.zip",
-			checksum: "c32834eb3e4d42ac53af6030cf7a30f30ff2f3dcc473d891b1cbaa107435296d"
+			url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/public/new_arch/v_3_0_3_2/JioMeetCoreSDK.xcframework.zip",
+			checksum: "5ebe8822d0de01c4530ac118e70d5a65b624836af1f43832fe41471889675c6f"
 		),
 		.target(
 			name: "JioMeetCoreSDKTarget",
