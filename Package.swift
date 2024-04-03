@@ -22,7 +22,7 @@ let package = Package(
 		.package(
 			name: "JioMeetMediaStackSDK",
 			url: "https://github.com/JioMeet/JMMediaStackSDK_iOS.git",
-			.exact("1.0.3")
+			.upToNextMajor(from: "1.0.0")
 		)
 	],
 	targets: [
