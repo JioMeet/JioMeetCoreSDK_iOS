@@ -1,0 +1,2260 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "JioMeetScreenShareSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ReplayKit",
+        "printedName": "ReplayKit",
+        "declKind": "Import",
+        "moduleName": "JioMeetScreenShareSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "JMMediaStackSDK",
+        "printedName": "JMMediaStackSDK",
+        "declKind": "Import",
+        "moduleName": "JioMeetScreenShareSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "JMScreenShareHandler",
+        "printedName": "JMScreenShareHandler",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getAppGroupsIdentifier",
+            "printedName": "getAppGroupsIdentifier()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21JioMeetScreenShareSDK08JMScreenD7HandlerC22getAppGroupsIdentifierSSyF",
+            "mangledName": "$s21JioMeetScreenShareSDK08JMScreenD7HandlerC22getAppGroupsIdentifierSSyF",
+            "moduleName": "JioMeetScreenShareSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "broadcastStarted",
+            "printedName": "broadcastStarted(withSetupInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : ObjectiveC.NSObject]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : ObjectiveC.NSObject]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSObject",
+                        "printedName": "ObjectiveC.NSObject",
+                        "usr": "c:objc(cs)NSObject"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@JioMeetScreenShareSDK@objc(cs)JMScreenShareHandler(im)broadcastStartedWithSetupInfo:",
+            "mangledName": "$s21JioMeetScreenShareSDK08JMScreenD7HandlerC16broadcastStarted13withSetupInfoySDySSSo8NSObjectCGSg_tF",
+            "moduleName": "JioMeetScreenShareSDK",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "broadcastStartedWithSetupInfo:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "broadcastPaused",
+            "printedName": "broadcastPaused()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@JioMeetScreenShareSDK@objc(cs)JMScreenShareHandler(im)broadcastPaused",
+            "mangledName": "$s21JioMeetScreenShareSDK08JMScreenD7HandlerC15broadcastPausedyyF",
+            "moduleName": "JioMeetScreenShareSDK",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "broadcastPaused",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "broadcastResumed",
+            "printedName": "broadcastResumed()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@JioMeetScreenShareSDK@objc(cs)JMScreenShareHandler(im)broadcastResumed",
+            "mangledName": "$s21JioMeetScreenShareSDK08JMScreenD7HandlerC16broadcastResumedyyF",
+            "moduleName": "JioMeetScreenShareSDK",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "broadcastResumed",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "broadcastFinished",
+            "printedName": "broadcastFinished()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@JioMeetScreenShareSDK@objc(cs)JMScreenShareHandler(im)broadcastFinished",
+            "mangledName": "$s21JioMeetScreenShareSDK08JMScreenD7HandlerC17broadcastFinishedyyF",
+            "moduleName": "JioMeetScreenShareSDK",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "broadcastFinished",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "processSampleBuffer",
+            "printedName": "processSampleBuffer(_:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMSampleBuffer",
+                "printedName": "CoreMedia.CMSampleBuffer",
+                "usr": "c:@T@CMSampleBufferRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RPSampleBufferType",
+                "printedName": "ReplayKit.RPSampleBufferType",
+                "usr": "c:@E@RPSampleBufferType"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@JioMeetScreenShareSDK@objc(cs)JMScreenShareHandler(im)processSampleBuffer:withType:",
+            "mangledName": "$s21JioMeetScreenShareSDK08JMScreenD7HandlerC19processSampleBuffer_4withySo08CMSampleJ3Refa_So08RPSampleJ4TypeVtF",
+            "moduleName": "JioMeetScreenShareSDK",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "processSampleBuffer:withType:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JMScreenShareHandler",
+                "printedName": "JioMeetScreenShareSDK.JMScreenShareHandler",
+                "usr": "c:@M@JioMeetScreenShareSDK@objc(cs)JMScreenShareHandler"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@JioMeetScreenShareSDK@objc(cs)JMScreenShareHandler(im)init",
+            "mangledName": "$s21JioMeetScreenShareSDK08JMScreenD7HandlerCACycfc",
+            "moduleName": "JioMeetScreenShareSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "didFinishBroadcastWithError",
+            "printedName": "didFinishBroadcastWithError(error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSError",
+                "printedName": "Foundation.NSError",
+                "usr": "c:objc(cs)NSError"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@JioMeetScreenShareSDK@objc(cs)JMScreenShareHandler(im)didFinishBroadcastWithErrorWithError:",
+            "mangledName": "$s21JioMeetScreenShareSDK08JMScreenD7HandlerC27didFinishBroadcastWithError5errorySo7NSErrorC_tF",
+            "moduleName": "JioMeetScreenShareSDK",
+            "objc_name": "didFinishBroadcastWithErrorWithError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didRequestScreenShareStartData",
+            "printedName": "didRequestScreenShareStartData()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSDictionary",
+                "printedName": "Foundation.NSDictionary",
+                "usr": "c:objc(cs)NSDictionary"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@JioMeetScreenShareSDK@objc(cs)JMScreenShareHandler(im)didRequestScreenShareStartData",
+            "mangledName": "$s21JioMeetScreenShareSDK08JMScreenD7HandlerC010didRequestcD9StartDataSo12NSDictionaryCyF",
+            "moduleName": "JioMeetScreenShareSDK",
+            "objc_name": "didRequestScreenShareStartData",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didRequestScreenShareStopReason",
+            "printedName": "didRequestScreenShareStopReason()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@JioMeetScreenShareSDK@objc(cs)JMScreenShareHandler(im)didRequestScreenShareStopReason",
+            "mangledName": "$s21JioMeetScreenShareSDK08JMScreenD7HandlerC010didRequestcD10StopReasonSSSgyF",
+            "moduleName": "JioMeetScreenShareSDK",
+            "objc_name": "didRequestScreenShareStopReason",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@JioMeetScreenShareSDK@objc(cs)JMScreenShareHandler",
+        "mangledName": "$s21JioMeetScreenShareSDK08JMScreenD7HandlerC",
+        "moduleName": "JioMeetScreenShareSDK",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)RPBroadcastSampleHandler",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ReplayKit.RPBroadcastSampleHandler",
+          "ReplayKit.RPBroadcastHandler",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "JMScreenShareManagerDelegate",
+            "printedName": "JMScreenShareManagerDelegate",
+            "usr": "c:@M@JioMeetScreenShareSDK@objc(pl)JMScreenShareManagerDelegate",
+            "mangledName": "$s21JioMeetScreenShareSDK08JMScreenD15ManagerDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "JioMeetScreenShareSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ScreenShareStrings",
+        "printedName": "ScreenShareStrings",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "rtcAppId",
+            "printedName": "rtcAppId",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(JioMeetScreenShareSDK.ScreenShareStrings.Type) -> JioMeetScreenShareSDK.ScreenShareStrings",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenShareStrings",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareStrings",
+                    "usr": "s:21JioMeetScreenShareSDK0cD7StringsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareStrings.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScreenShareStrings",
+                        "printedName": "JioMeetScreenShareSDK.ScreenShareStrings",
+                        "usr": "s:21JioMeetScreenShareSDK0cD7StringsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21JioMeetScreenShareSDK0cD7StringsO8rtcAppIdyA2CmF",
+            "mangledName": "$s21JioMeetScreenShareSDK0cD7StringsO8rtcAppIdyA2CmF",
+            "moduleName": "JioMeetScreenShareSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "rtcRoomId",
+            "printedName": "rtcRoomId",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(JioMeetScreenShareSDK.ScreenShareStrings.Type) -> JioMeetScreenShareSDK.ScreenShareStrings",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenShareStrings",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareStrings",
+                    "usr": "s:21JioMeetScreenShareSDK0cD7StringsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareStrings.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScreenShareStrings",
+                        "printedName": "JioMeetScreenShareSDK.ScreenShareStrings",
+                        "usr": "s:21JioMeetScreenShareSDK0cD7StringsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21JioMeetScreenShareSDK0cD7StringsO9rtcRoomIdyA2CmF",
+            "mangledName": "$s21JioMeetScreenShareSDK0cD7StringsO9rtcRoomIdyA2CmF",
+            "moduleName": "JioMeetScreenShareSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "rtcToken",
+            "printedName": "rtcToken",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(JioMeetScreenShareSDK.ScreenShareStrings.Type) -> JioMeetScreenShareSDK.ScreenShareStrings",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenShareStrings",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareStrings",
+                    "usr": "s:21JioMeetScreenShareSDK0cD7StringsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareStrings.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScreenShareStrings",
+                        "printedName": "JioMeetScreenShareSDK.ScreenShareStrings",
+                        "usr": "s:21JioMeetScreenShareSDK0cD7StringsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21JioMeetScreenShareSDK0cD7StringsO8rtcTokenyA2CmF",
+            "mangledName": "$s21JioMeetScreenShareSDK0cD7StringsO8rtcTokenyA2CmF",
+            "moduleName": "JioMeetScreenShareSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "shareUid",
+            "printedName": "shareUid",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(JioMeetScreenShareSDK.ScreenShareStrings.Type) -> JioMeetScreenShareSDK.ScreenShareStrings",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenShareStrings",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareStrings",
+                    "usr": "s:21JioMeetScreenShareSDK0cD7StringsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareStrings.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScreenShareStrings",
+                        "printedName": "JioMeetScreenShareSDK.ScreenShareStrings",
+                        "usr": "s:21JioMeetScreenShareSDK0cD7StringsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21JioMeetScreenShareSDK0cD7StringsO8shareUidyA2CmF",
+            "mangledName": "$s21JioMeetScreenShareSDK0cD7StringsO8shareUidyA2CmF",
+            "moduleName": "JioMeetScreenShareSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "JioMeetScreenShareSDK.ScreenShareStrings?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenShareStrings",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareStrings",
+                    "usr": "s:21JioMeetScreenShareSDK0cD7StringsO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21JioMeetScreenShareSDK0cD7StringsO8rawValueACSgSS_tcfc",
+            "mangledName": "$s21JioMeetScreenShareSDK0cD7StringsO8rawValueACSgSS_tcfc",
+            "moduleName": "JioMeetScreenShareSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21JioMeetScreenShareSDK0cD7StringsO8rawValueSSvp",
+            "mangledName": "$s21JioMeetScreenShareSDK0cD7StringsO8rawValueSSvp",
+            "moduleName": "JioMeetScreenShareSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21JioMeetScreenShareSDK0cD7StringsO8rawValueSSvg",
+                "mangledName": "$s21JioMeetScreenShareSDK0cD7StringsO8rawValueSSvg",
+                "moduleName": "JioMeetScreenShareSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:21JioMeetScreenShareSDK0cD7StringsO",
+        "mangledName": "$s21JioMeetScreenShareSDK0cD7StringsO",
+        "moduleName": "JioMeetScreenShareSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ScreenShareUserDefaultsKeys",
+        "printedName": "ScreenShareUserDefaultsKeys",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "rtcAppIdKey",
+            "printedName": "rtcAppIdKey",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys.Type) -> JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenShareUserDefaultsKeys",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys",
+                    "usr": "s:21JioMeetScreenShareSDK0cD16UserDefaultsKeysO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScreenShareUserDefaultsKeys",
+                        "printedName": "JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys",
+                        "usr": "s:21JioMeetScreenShareSDK0cD16UserDefaultsKeysO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21JioMeetScreenShareSDK0cD16UserDefaultsKeysO11rtcAppIdKeyyA2CmF",
+            "mangledName": "$s21JioMeetScreenShareSDK0cD16UserDefaultsKeysO11rtcAppIdKeyyA2CmF",
+            "moduleName": "JioMeetScreenShareSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "rtcRoomIdKey",
+            "printedName": "rtcRoomIdKey",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys.Type) -> JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenShareUserDefaultsKeys",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys",
+                    "usr": "s:21JioMeetScreenShareSDK0cD16UserDefaultsKeysO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScreenShareUserDefaultsKeys",
+                        "printedName": "JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys",
+                        "usr": "s:21JioMeetScreenShareSDK0cD16UserDefaultsKeysO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21JioMeetScreenShareSDK0cD16UserDefaultsKeysO12rtcRoomIdKeyyA2CmF",
+            "mangledName": "$s21JioMeetScreenShareSDK0cD16UserDefaultsKeysO12rtcRoomIdKeyyA2CmF",
+            "moduleName": "JioMeetScreenShareSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "rtcTokenKey",
+            "printedName": "rtcTokenKey",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys.Type) -> JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenShareUserDefaultsKeys",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys",
+                    "usr": "s:21JioMeetScreenShareSDK0cD16UserDefaultsKeysO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScreenShareUserDefaultsKeys",
+                        "printedName": "JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys",
+                        "usr": "s:21JioMeetScreenShareSDK0cD16UserDefaultsKeysO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21JioMeetScreenShareSDK0cD16UserDefaultsKeysO11rtcTokenKeyyA2CmF",
+            "mangledName": "$s21JioMeetScreenShareSDK0cD16UserDefaultsKeysO11rtcTokenKeyyA2CmF",
+            "moduleName": "JioMeetScreenShareSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "shareUidKey",
+            "printedName": "shareUidKey",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys.Type) -> JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenShareUserDefaultsKeys",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys",
+                    "usr": "s:21JioMeetScreenShareSDK0cD16UserDefaultsKeysO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScreenShareUserDefaultsKeys",
+                        "printedName": "JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys",
+                        "usr": "s:21JioMeetScreenShareSDK0cD16UserDefaultsKeysO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21JioMeetScreenShareSDK0cD16UserDefaultsKeysO11shareUidKeyyA2CmF",
+            "mangledName": "$s21JioMeetScreenShareSDK0cD16UserDefaultsKeysO11shareUidKeyyA2CmF",
+            "moduleName": "JioMeetScreenShareSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "screenShareStopReason",
+            "printedName": "screenShareStopReason",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys.Type) -> JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenShareUserDefaultsKeys",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys",
+                    "usr": "s:21JioMeetScreenShareSDK0cD16UserDefaultsKeysO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScreenShareUserDefaultsKeys",
+                        "printedName": "JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys",
+                        "usr": "s:21JioMeetScreenShareSDK0cD16UserDefaultsKeysO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21JioMeetScreenShareSDK0cD16UserDefaultsKeysO06screenD10StopReasonyA2CmF",
+            "mangledName": "$s21JioMeetScreenShareSDK0cD16UserDefaultsKeysO06screenD10StopReasonyA2CmF",
+            "moduleName": "JioMeetScreenShareSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenShareUserDefaultsKeys",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys",
+                    "usr": "s:21JioMeetScreenShareSDK0cD16UserDefaultsKeysO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21JioMeetScreenShareSDK0cD16UserDefaultsKeysO8rawValueACSgSS_tcfc",
+            "mangledName": "$s21JioMeetScreenShareSDK0cD16UserDefaultsKeysO8rawValueACSgSS_tcfc",
+            "moduleName": "JioMeetScreenShareSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21JioMeetScreenShareSDK0cD16UserDefaultsKeysO8rawValueSSvp",
+            "mangledName": "$s21JioMeetScreenShareSDK0cD16UserDefaultsKeysO8rawValueSSvp",
+            "moduleName": "JioMeetScreenShareSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21JioMeetScreenShareSDK0cD16UserDefaultsKeysO8rawValueSSvg",
+                "mangledName": "$s21JioMeetScreenShareSDK0cD16UserDefaultsKeysO8rawValueSSvg",
+                "moduleName": "JioMeetScreenShareSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:21JioMeetScreenShareSDK0cD16UserDefaultsKeysO",
+        "mangledName": "$s21JioMeetScreenShareSDK0cD16UserDefaultsKeysO",
+        "moduleName": "JioMeetScreenShareSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ScreenShareNotifications",
+        "printedName": "ScreenShareNotifications",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "replayKitStartedBroadcast",
+            "printedName": "replayKitStartedBroadcast",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(JioMeetScreenShareSDK.ScreenShareNotifications.Type) -> JioMeetScreenShareSDK.ScreenShareNotifications",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenShareNotifications",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareNotifications",
+                    "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareNotifications.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScreenShareNotifications",
+                        "printedName": "JioMeetScreenShareSDK.ScreenShareNotifications",
+                        "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO25replayKitStartedBroadcastyA2CmF",
+            "mangledName": "$s21JioMeetScreenShareSDK0cD13NotificationsO25replayKitStartedBroadcastyA2CmF",
+            "moduleName": "JioMeetScreenShareSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "replayKitStoppedBroadcast",
+            "printedName": "replayKitStoppedBroadcast",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(JioMeetScreenShareSDK.ScreenShareNotifications.Type) -> JioMeetScreenShareSDK.ScreenShareNotifications",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenShareNotifications",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareNotifications",
+                    "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareNotifications.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScreenShareNotifications",
+                        "printedName": "JioMeetScreenShareSDK.ScreenShareNotifications",
+                        "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO25replayKitStoppedBroadcastyA2CmF",
+            "mangledName": "$s21JioMeetScreenShareSDK0cD13NotificationsO25replayKitStoppedBroadcastyA2CmF",
+            "moduleName": "JioMeetScreenShareSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "screenShareDataAvailableToStart",
+            "printedName": "screenShareDataAvailableToStart",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(JioMeetScreenShareSDK.ScreenShareNotifications.Type) -> JioMeetScreenShareSDK.ScreenShareNotifications",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenShareNotifications",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareNotifications",
+                    "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareNotifications.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScreenShareNotifications",
+                        "printedName": "JioMeetScreenShareSDK.ScreenShareNotifications",
+                        "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO06screenD20DataAvailableToStartyA2CmF",
+            "mangledName": "$s21JioMeetScreenShareSDK0cD13NotificationsO06screenD20DataAvailableToStartyA2CmF",
+            "moduleName": "JioMeetScreenShareSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "screenShareStreamPushStarted",
+            "printedName": "screenShareStreamPushStarted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(JioMeetScreenShareSDK.ScreenShareNotifications.Type) -> JioMeetScreenShareSDK.ScreenShareNotifications",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenShareNotifications",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareNotifications",
+                    "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareNotifications.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScreenShareNotifications",
+                        "printedName": "JioMeetScreenShareSDK.ScreenShareNotifications",
+                        "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO06screenD17StreamPushStartedyA2CmF",
+            "mangledName": "$s21JioMeetScreenShareSDK0cD13NotificationsO06screenD17StreamPushStartedyA2CmF",
+            "moduleName": "JioMeetScreenShareSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "screenShareStreamPushStopped",
+            "printedName": "screenShareStreamPushStopped",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(JioMeetScreenShareSDK.ScreenShareNotifications.Type) -> JioMeetScreenShareSDK.ScreenShareNotifications",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenShareNotifications",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareNotifications",
+                    "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareNotifications.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScreenShareNotifications",
+                        "printedName": "JioMeetScreenShareSDK.ScreenShareNotifications",
+                        "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO06screenD17StreamPushStoppedyA2CmF",
+            "mangledName": "$s21JioMeetScreenShareSDK0cD13NotificationsO06screenD17StreamPushStoppedyA2CmF",
+            "moduleName": "JioMeetScreenShareSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "screenShareForceStopRequest",
+            "printedName": "screenShareForceStopRequest",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(JioMeetScreenShareSDK.ScreenShareNotifications.Type) -> JioMeetScreenShareSDK.ScreenShareNotifications",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenShareNotifications",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareNotifications",
+                    "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareNotifications.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScreenShareNotifications",
+                        "printedName": "JioMeetScreenShareSDK.ScreenShareNotifications",
+                        "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO06screenD16ForceStopRequestyA2CmF",
+            "mangledName": "$s21JioMeetScreenShareSDK0cD13NotificationsO06screenD16ForceStopRequestyA2CmF",
+            "moduleName": "JioMeetScreenShareSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "requestToStartScreenShare",
+            "printedName": "requestToStartScreenShare",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(JioMeetScreenShareSDK.ScreenShareNotifications.Type) -> JioMeetScreenShareSDK.ScreenShareNotifications",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenShareNotifications",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareNotifications",
+                    "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareNotifications.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScreenShareNotifications",
+                        "printedName": "JioMeetScreenShareSDK.ScreenShareNotifications",
+                        "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO014requestToStartcD0yA2CmF",
+            "mangledName": "$s21JioMeetScreenShareSDK0cD13NotificationsO014requestToStartcD0yA2CmF",
+            "moduleName": "JioMeetScreenShareSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "requestToStopScreenShare",
+            "printedName": "requestToStopScreenShare",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(JioMeetScreenShareSDK.ScreenShareNotifications.Type) -> JioMeetScreenShareSDK.ScreenShareNotifications",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenShareNotifications",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareNotifications",
+                    "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareNotifications.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScreenShareNotifications",
+                        "printedName": "JioMeetScreenShareSDK.ScreenShareNotifications",
+                        "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO013requestToStopcD0yA2CmF",
+            "mangledName": "$s21JioMeetScreenShareSDK0cD13NotificationsO013requestToStopcD0yA2CmF",
+            "moduleName": "JioMeetScreenShareSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "JioMeetScreenShareSDK.ScreenShareNotifications?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenShareNotifications",
+                    "printedName": "JioMeetScreenShareSDK.ScreenShareNotifications",
+                    "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO8rawValueACSgSS_tcfc",
+            "mangledName": "$s21JioMeetScreenShareSDK0cD13NotificationsO8rawValueACSgSS_tcfc",
+            "moduleName": "JioMeetScreenShareSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO8rawValueSSvp",
+            "mangledName": "$s21JioMeetScreenShareSDK0cD13NotificationsO8rawValueSSvp",
+            "moduleName": "JioMeetScreenShareSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO8rawValueSSvg",
+                "mangledName": "$s21JioMeetScreenShareSDK0cD13NotificationsO8rawValueSSvg",
+                "moduleName": "JioMeetScreenShareSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:21JioMeetScreenShareSDK0cD13NotificationsO",
+        "mangledName": "$s21JioMeetScreenShareSDK0cD13NotificationsO",
+        "moduleName": "JioMeetScreenShareSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "JioMeetScreenShareSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ReplayKit",
+        "printedName": "ReplayKit",
+        "declKind": "Import",
+        "moduleName": "JioMeetScreenShareSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "JMMediaStackSDK",
+        "printedName": "JMMediaStackSDK",
+        "declKind": "Import",
+        "moduleName": "JioMeetScreenShareSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreFoundation",
+        "printedName": "CoreFoundation",
+        "declKind": "Import",
+        "moduleName": "JioMeetScreenShareSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMedia",
+        "printedName": "CoreMedia",
+        "declKind": "Import",
+        "moduleName": "JioMeetScreenShareSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "JioMeetScreenShareSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "ReplayKit",
+        "printedName": "ReplayKit",
+        "declKind": "Import",
+        "moduleName": "JioMeetScreenShareSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "JioMeetRtcEngineKit",
+        "printedName": "JioMeetRtcEngineKit",
+        "declKind": "Import",
+        "moduleName": "JioMeetScreenShareSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AgoraEngineScreenShareManager",
+        "printedName": "AgoraEngineScreenShareManager",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AgoraEngineScreenShareManager",
+                "printedName": "JioMeetScreenShareSDK.AgoraEngineScreenShareManager",
+                "usr": "c:@M@JioMeetScreenShareSDK@objc(cs)AgoraEngineScreenShareManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@JioMeetScreenShareSDK@objc(cs)AgoraEngineScreenShareManager(im)init",
+            "mangledName": "$s21JioMeetScreenShareSDK011AgoraEnginecD7ManagerCACycfc",
+            "moduleName": "JioMeetScreenShareSDK",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "rtcEngine",
+            "printedName": "rtcEngine(_:didOccurError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AgoraRtcEngineKit",
+                "printedName": "JioMeetRtcEngineKit.AgoraRtcEngineKit",
+                "usr": "c:objc(cs)AgoraRtcEngineKit"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AgoraErrorCode",
+                "printedName": "JioMeetRtcEngineKit.AgoraErrorCode",
+                "usr": "c:@E@AgoraErrorCode"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@JioMeetScreenShareSDK@objc(cs)AgoraEngineScreenShareManager(im)rtcEngine:didOccurError:",
+            "mangledName": "$s21JioMeetScreenShareSDK011AgoraEnginecD7ManagerC03rtcG0_13didOccurErrorySo0f3RtcG3KitC_So0fL4CodeVtF",
+            "moduleName": "JioMeetScreenShareSDK",
+            "objc_name": "rtcEngine:didOccurError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "rtcEngine",
+            "printedName": "rtcEngine(_:didJoinChannel:withUid:elapsed:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AgoraRtcEngineKit",
+                "printedName": "JioMeetRtcEngineKit.AgoraRtcEngineKit",
+                "usr": "c:objc(cs)AgoraRtcEngineKit"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@JioMeetScreenShareSDK@objc(cs)AgoraEngineScreenShareManager(im)rtcEngine:didJoinChannel:withUid:elapsed:",
+            "mangledName": "$s21JioMeetScreenShareSDK011AgoraEnginecD7ManagerC03rtcG0_14didJoinChannel7withUid7elapsedySo0f3RtcG3KitC_SSSuSitF",
+            "moduleName": "JioMeetScreenShareSDK",
+            "objc_name": "rtcEngine:didJoinChannel:withUid:elapsed:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "rtcEngine",
+            "printedName": "rtcEngine(_:didLeaveChannelWith:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AgoraRtcEngineKit",
+                "printedName": "JioMeetRtcEngineKit.AgoraRtcEngineKit",
+                "usr": "c:objc(cs)AgoraRtcEngineKit"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AgoraChannelStats",
+                "printedName": "JioMeetRtcEngineKit.AgoraChannelStats",
+                "usr": "c:objc(cs)AgoraChannelStats"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@JioMeetScreenShareSDK@objc(cs)AgoraEngineScreenShareManager(im)rtcEngine:didLeaveChannelWithStats:",
+            "mangledName": "$s21JioMeetScreenShareSDK011AgoraEnginecD7ManagerC03rtcG0_19didLeaveChannelWithySo0f3RtcG3KitC_So0fL5StatsCtF",
+            "moduleName": "JioMeetScreenShareSDK",
+            "objc_name": "rtcEngine:didLeaveChannelWithStats:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@JioMeetScreenShareSDK@objc(cs)AgoraEngineScreenShareManager",
+        "mangledName": "$s21JioMeetScreenShareSDK011AgoraEnginecD7ManagerC",
+        "moduleName": "JioMeetScreenShareSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "JioMeetScreenShareSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "JMScreenShareManagerDelegate",
+        "printedName": "JMScreenShareManagerDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "didFinishBroadcastWithError",
+            "printedName": "didFinishBroadcastWithError(error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSError",
+                "printedName": "Foundation.NSError",
+                "usr": "c:objc(cs)NSError"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@JioMeetScreenShareSDK@objc(pl)JMScreenShareManagerDelegate(im)didFinishBroadcastWithErrorWithError:",
+            "mangledName": "$s21JioMeetScreenShareSDK08JMScreenD15ManagerDelegateP27didFinishBroadcastWithError5errorySo7NSErrorC_tF",
+            "moduleName": "JioMeetScreenShareSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : JioMeetScreenShareSDK.JMScreenShareManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : JioMeetScreenShareSDK.JMScreenShareManagerDelegate>",
+            "protocolReq": true,
+            "objc_name": "didFinishBroadcastWithErrorWithError:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didRequestScreenShareStartData",
+            "printedName": "didRequestScreenShareStartData()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSDictionary",
+                "printedName": "Foundation.NSDictionary",
+                "usr": "c:objc(cs)NSDictionary"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@JioMeetScreenShareSDK@objc(pl)JMScreenShareManagerDelegate(im)didRequestScreenShareStartData",
+            "mangledName": "$s21JioMeetScreenShareSDK08JMScreenD15ManagerDelegateP010didRequestcD9StartDataSo12NSDictionaryCyF",
+            "moduleName": "JioMeetScreenShareSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : JioMeetScreenShareSDK.JMScreenShareManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : JioMeetScreenShareSDK.JMScreenShareManagerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didRequestScreenShareStopReason",
+            "printedName": "didRequestScreenShareStopReason()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@JioMeetScreenShareSDK@objc(pl)JMScreenShareManagerDelegate(im)didRequestScreenShareStopReason",
+            "mangledName": "$s21JioMeetScreenShareSDK08JMScreenD15ManagerDelegateP010didRequestcD10StopReasonSSSgyF",
+            "moduleName": "JioMeetScreenShareSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : JioMeetScreenShareSDK.JMScreenShareManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : JioMeetScreenShareSDK.JMScreenShareManagerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@JioMeetScreenShareSDK@objc(pl)JMScreenShareManagerDelegate",
+        "mangledName": "$s21JioMeetScreenShareSDK08JMScreenD15ManagerDelegateP",
+        "moduleName": "JioMeetScreenShareSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShareHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 322,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 185,
+      "length": 10,
+      "value": "\"rtcAppId\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 214,
+      "length": 11,
+      "value": "\"rtcRoomId\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 243,
+      "length": 10,
+      "value": "\"rtcToken\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 271,
+      "length": 10,
+      "value": "\"shareUid\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 185,
+      "length": 10,
+      "value": "\"rtcAppId\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 214,
+      "length": 11,
+      "value": "\"rtcRoomId\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 243,
+      "length": 10,
+      "value": "\"rtcToken\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 271,
+      "length": 10,
+      "value": "\"shareUid\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 355,
+      "length": 34,
+      "value": "\"jm.screen.share.app.id.saved.key\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 411,
+      "length": 35,
+      "value": "\"jm.screen.share.room.id.saved.key\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 467,
+      "length": 37,
+      "value": "\"jm.screen.share.rtc.token.saved.key\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 525,
+      "length": 35,
+      "value": "\"jm.screen.share.rtc.uid.saved.key\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 591,
+      "length": 32,
+      "value": "\"jm.screen.share.stopped.reason\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 355,
+      "length": 34,
+      "value": "\"jm.screen.share.app.id.saved.key\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 411,
+      "length": 35,
+      "value": "\"jm.screen.share.room.id.saved.key\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 467,
+      "length": 37,
+      "value": "\"jm.screen.share.rtc.token.saved.key\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 525,
+      "length": 35,
+      "value": "\"jm.screen.share.rtc.uid.saved.key\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 591,
+      "length": 32,
+      "value": "\"jm.screen.share.stopped.reason\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 708,
+      "length": 40,
+      "value": "\"jm.darwin.replay.kit.started.broadcast\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 783,
+      "length": 37,
+      "value": "\"jm.darwin.replay.kit.broadcast.stop\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 861,
+      "length": 60,
+      "value": "\"jm.darwin.screenshare.screen.share.data.available.to.start\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 959,
+      "length": 56,
+      "value": "\"jm.darwin.screenshare.stream.push.started.successfully\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 1053,
+      "length": 56,
+      "value": "\"jm.darwin.screenshare.stream.push.stopped.successfully\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 1146,
+      "length": 47,
+      "value": "\"jm.darwin.screenshare.force.stop.screen.share\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 1289,
+      "length": 59,
+      "value": "\"jm.notification.center.default.screen.share.start.request\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 1382,
+      "length": 64,
+      "value": "\"jm.notification.center.default.screen.share.force.stop.request\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 708,
+      "length": 40,
+      "value": "\"jm.darwin.replay.kit.started.broadcast\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 783,
+      "length": 37,
+      "value": "\"jm.darwin.replay.kit.broadcast.stop\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 861,
+      "length": 60,
+      "value": "\"jm.darwin.screenshare.screen.share.data.available.to.start\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 959,
+      "length": 56,
+      "value": "\"jm.darwin.screenshare.stream.push.started.successfully\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 1053,
+      "length": 56,
+      "value": "\"jm.darwin.screenshare.stream.push.stopped.successfully\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 1146,
+      "length": 47,
+      "value": "\"jm.darwin.screenshare.force.stop.screen.share\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 1289,
+      "length": 59,
+      "value": "\"jm.notification.center.default.screen.share.start.request\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 1382,
+      "length": 64,
+      "value": "\"jm.notification.center.default.screen.share.force.stop.request\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1507,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1524,
+      "length": 10,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1541,
+      "length": 11,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1507,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1524,
+      "length": 10,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1541,
+      "length": 11,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1507,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1524,
+      "length": 10,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1541,
+      "length": 11,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1596,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1612,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1629,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1646,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1596,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1612,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1629,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1646,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1596,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1612,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1629,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1646,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/AgoraEngineScreenShareManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1815,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/AgoraEngineScreenShareManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1875,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/AgoraEngineScreenShareManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1976,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/AgoraEngineScreenShareManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2098,
+      "length": 3,
+      "value": "\"0\""
+    }
+  ]
+}

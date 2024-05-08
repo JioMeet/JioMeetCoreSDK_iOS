@@ -12,6 +12,10 @@ let package = Package(
 			name: "JioMeetCoreSDK",
 			targets: ["JioMeetCoreSDKTarget"]
 		),
+		.library(
+			name: "JioMeetScreenShareSDK", 
+			targets: ["JioMeetScreenShareSDKTarget"]
+		),
 	],
 	dependencies: [
 		.package(
@@ -30,6 +34,10 @@ let package = Package(
 			name: "JioMeetCoreSDK",
 			path: "XCFrameworks/JioMeetCoreSDK.xcframework"
 		),
+		.binaryTarget(
+            name: "JioMeetScreenShareSDK",
+            path: "XCFrameworks/JioMeetScreenShareSDK.xcframework"
+        ),
 		.target(
 			name: "JioMeetCoreSDKTarget",
 			dependencies: [
@@ -38,7 +46,18 @@ let package = Package(
 				.product(name: "RTM", package: "JioMeetRtcEngine_iOS"),
 				.product(name: "JioMeetMediaStackSDK", package: "JioMeetMediaStackSDK")
 			],
-			path: "Framework/Dependency",
+			path: "SPMSource/CoreSDK",
+			exclude: []
+		),
+		.target(
+			name: "JioMeetScreenShareSDKTarget",
+			dependencies: [
+				.target(name: "JioMeetScreenShareSDK"),
+				.product(name: "RTC", package: "JioMeetRtcEngine_iOS"),
+				.product(name: "RTM", package: "JioMeetRtcEngine_iOS"),
+				.product(name: "JioMeetMediaStackSDK", package: "JioMeetMediaStackSDK")
+			],
+			path: "SPMSource/ScreenShareSDK",
 			exclude: []
 		),
 	]
