@@ -26,7 +26,7 @@ let package = Package(
 		.package(
 			name: "JioMeetMediaStackSDK",
 			url: "https://github.com/JioMeet/JMMediaStackSDK_iOS.git",
-			.branch("spm_automation_new")
+			.branch("spm_custom_test")
 		)
 	],
 	targets: [
