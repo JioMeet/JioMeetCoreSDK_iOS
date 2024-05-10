@@ -26,17 +26,19 @@ let package = Package(
 		.package(
 			name: "JioMeetMediaStackSDK",
 			url: "https://github.com/JioMeet/JMMediaStackSDK_iOS.git",
-			.branch("spm_automation_new")
+			.branch("spm_custom_test_url")
 		)
 	],
 	targets: [
 		.binaryTarget(
 			name: "JioMeetCoreSDK",
-			path: "XCFrameworks/JioMeetCoreSDK.xcframework"
+			url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/public/JMMedia/dynamic/v_2_0_0_alpha_demo/test/JioMeetCoreSDK.xcframework.zip",
+			checksum: "42cecad0253296e7fd7343cf8e2f3545387332848d8df27579c91a797646df36"
 		),
 		.binaryTarget(
             name: "JioMeetScreenShareSDK",
-            path: "XCFrameworks/JioMeetScreenShareSDK.xcframework"
+            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/public/JMMedia/dynamic/v_2_0_0_alpha_demo/test/JioMeetScreenShareSDK.xcframework.zip",
+			checksum: "667fa30bdf4d90d2615eea57da7860e4c45dfc0e697c2ee3f53c053f0987f109"
         ),
 		.target(
 			name: "JioMeetCoreSDKTarget",
