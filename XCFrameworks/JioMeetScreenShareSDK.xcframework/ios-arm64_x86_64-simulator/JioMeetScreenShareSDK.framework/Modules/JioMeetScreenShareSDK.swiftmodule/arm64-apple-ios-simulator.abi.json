@@ -1837,420 +1837,420 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShareHandler.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShareHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 322,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 185,
       "length": 10,
       "value": "\"rtcAppId\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 214,
       "length": 11,
       "value": "\"rtcRoomId\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 243,
       "length": 10,
       "value": "\"rtcToken\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 271,
       "length": 10,
       "value": "\"shareUid\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 185,
       "length": 10,
       "value": "\"rtcAppId\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 214,
       "length": 11,
       "value": "\"rtcRoomId\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 243,
       "length": 10,
       "value": "\"rtcToken\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 271,
       "length": 10,
       "value": "\"shareUid\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 355,
       "length": 34,
       "value": "\"jm.screen.share.app.id.saved.key\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 411,
       "length": 35,
       "value": "\"jm.screen.share.room.id.saved.key\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 467,
       "length": 37,
       "value": "\"jm.screen.share.rtc.token.saved.key\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 525,
       "length": 35,
       "value": "\"jm.screen.share.rtc.uid.saved.key\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 591,
       "length": 32,
       "value": "\"jm.screen.share.stopped.reason\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 355,
       "length": 34,
       "value": "\"jm.screen.share.app.id.saved.key\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 411,
       "length": 35,
       "value": "\"jm.screen.share.room.id.saved.key\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 467,
       "length": 37,
       "value": "\"jm.screen.share.rtc.token.saved.key\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 525,
       "length": 35,
       "value": "\"jm.screen.share.rtc.uid.saved.key\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 591,
       "length": 32,
       "value": "\"jm.screen.share.stopped.reason\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 708,
       "length": 40,
       "value": "\"jm.darwin.replay.kit.started.broadcast\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 783,
       "length": 37,
       "value": "\"jm.darwin.replay.kit.broadcast.stop\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 861,
       "length": 60,
       "value": "\"jm.darwin.screenshare.screen.share.data.available.to.start\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 959,
       "length": 56,
       "value": "\"jm.darwin.screenshare.stream.push.started.successfully\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 1053,
       "length": 56,
       "value": "\"jm.darwin.screenshare.stream.push.stopped.successfully\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 1146,
       "length": 47,
       "value": "\"jm.darwin.screenshare.force.stop.screen.share\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 1289,
       "length": 59,
       "value": "\"jm.notification.center.default.screen.share.start.request\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 1382,
       "length": 64,
       "value": "\"jm.notification.center.default.screen.share.force.stop.request\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 708,
       "length": 40,
       "value": "\"jm.darwin.replay.kit.started.broadcast\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 783,
       "length": 37,
       "value": "\"jm.darwin.replay.kit.broadcast.stop\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 861,
       "length": 60,
       "value": "\"jm.darwin.screenshare.screen.share.data.available.to.start\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 959,
       "length": 56,
       "value": "\"jm.darwin.screenshare.stream.push.started.successfully\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 1053,
       "length": 56,
       "value": "\"jm.darwin.screenshare.stream.push.stopped.successfully\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 1146,
       "length": 47,
       "value": "\"jm.darwin.screenshare.force.stop.screen.share\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 1289,
       "length": 59,
       "value": "\"jm.notification.center.default.screen.share.start.request\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "StringLiteral",
       "offset": 1382,
       "length": 64,
       "value": "\"jm.notification.center.default.screen.share.force.stop.request\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1507,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1524,
       "length": 10,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1541,
       "length": 11,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1507,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1524,
       "length": 10,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1541,
       "length": 11,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1507,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1524,
       "length": 10,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1541,
       "length": 11,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1596,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1612,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1629,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1646,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1596,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1612,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1629,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1646,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1596,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1612,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1629,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/JMScreenShare+Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 1646,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/AgoraEngineScreenShareManager.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/AgoraEngineScreenShareManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1815,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/AgoraEngineScreenShareManager.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/AgoraEngineScreenShareManager.swift",
       "kind": "StringLiteral",
       "offset": 1875,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/AgoraEngineScreenShareManager.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/AgoraEngineScreenShareManager.swift",
       "kind": "StringLiteral",
       "offset": 1976,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreSDKs\/CoreSDKsSPMBuilder\/JioMeetScreenShareSDK\/AgoraEngineScreenShareManager.swift",
+      "filePath": "\/Users\/bigstep\/Documents\/Development\/Cpass_Development\/JioMeetNativeSDKiOS\/SPM_Builder\/CoreAndScreenShare\/SDKBuilderProject\/JioMeetScreenShareSDK\/AgoraEngineScreenShareManager.swift",
       "kind": "StringLiteral",
       "offset": 2098,
       "length": 3,
