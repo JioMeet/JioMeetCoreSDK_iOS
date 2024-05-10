@@ -11,11 +11,7 @@ let package = Package(
 		.library(
 			name: "JioMeetCoreSDK",
 			targets: ["JioMeetCoreSDKTarget"]
-		),
-		.library(
-			name: "JioMeetScreenShareSDK", 
-			targets: ["JioMeetScreenShareSDKTarget"]
-		),
+		)
 	],
 	dependencies: [
 		.package(
@@ -35,11 +31,6 @@ let package = Package(
 			url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/public/JMMedia/dynamic/v_2_0_0_alpha_demo/test/JioMeetCoreSDK.xcframework.zip",
 			checksum: "42cecad0253296e7fd7343cf8e2f3545387332848d8df27579c91a797646df36"
 		),
-		.binaryTarget(
-            name: "JioMeetScreenShareSDK",
-            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/public/JMMedia/dynamic/v_2_0_0_alpha_demo/test/JioMeetScreenShareSDK.xcframework.zip",
-			checksum: "667fa30bdf4d90d2615eea57da7860e4c45dfc0e697c2ee3f53c053f0987f109"
-        ),
 		.target(
 			name: "JioMeetCoreSDKTarget",
 			dependencies: [
@@ -50,17 +41,6 @@ let package = Package(
 			],
 			path: "SPMSource/CoreSDK",
 			exclude: []
-		),
-		.target(
-			name: "JioMeetScreenShareSDKTarget",
-			dependencies: [
-				.target(name: "JioMeetScreenShareSDK"),
-				.product(name: "RTC", package: "JioMeetRtcEngine_iOS"),
-				.product(name: "RTM", package: "JioMeetRtcEngine_iOS"),
-				.product(name: "JioMeetMediaStackSDK", package: "JioMeetMediaStackSDK")
-			],
-			path: "SPMSource/ScreenShareSDK",
-			exclude: []
-		),
+		)
 	]
 )
