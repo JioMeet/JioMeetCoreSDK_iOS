@@ -10,11 +10,11 @@ let package = Package(
 	products: [
 		.library(
 			name: "JioMeetCoreSDK",
-			targets: ["JioMeetCoreSDKTarget"]
+			targets: ["JioMeetCoreSDKTarget", "JioMeetCoreSDK"]
 		),
 		.library(
 			name: "JioMeetScreenShareSDK", 
-			targets: ["JioMeetScreenShareSDKTarget"]
+			targets: ["JioMeetScreenShareSDKTarget", "JioMeetScreenShareSDK"]
 		),
 	],
 	dependencies: [
