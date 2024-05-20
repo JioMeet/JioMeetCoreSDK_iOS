@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/JioMeetCoreSDK.h</key>
 		<data>
-		BZhV2BdufxBoU/H3pNYTQ/EvcFU=
+		1pwvdDRbUwGNuSNa6r8ris9vfvw=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Modules/JioMeetCoreSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		IChSMx3uMhgEugT+SOVr/TamLZo=
+		HTTdSTVuuMXQJK+ughBHL27/RqI=
 		</data>
 		<key>Modules/JioMeetCoreSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/JioMeetCoreSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Uz9mE2PXwBg4NBH8TEvspmbO1OI=
+		U2KLX4WpXMC1agTWSD/bBjT+1EE=
 		</data>
 		<key>Modules/JioMeetCoreSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		IChSMx3uMhgEugT+SOVr/TamLZo=
+		HTTdSTVuuMXQJK+ughBHL27/RqI=
 		</data>
 		<key>Modules/JioMeetCoreSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/JioMeetCoreSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		AdSPNiQIZRA2UTlg+dRYDNj7U/0=
+		LvVeP/M9+rxMB8ZOjKcLMo4OlM0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,14 +63,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oDi8dQqsXL/AIXaNUV2glKFlPVqJtEm7WCnZ8GSxKu8=
+			eZnM0v/5mjDd37CLj6Yb385AM2Qa2a2hcx43vYDKRGQ=
 			</data>
 		</dict>
 		<key>Modules/JioMeetCoreSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wZk6ed2fJyCOdiU7rkzFFoId6unh5xPvGWlR9r1xmWg=
+			PBWBuL0yoKOoZl9vcliCMjbdLwm3wnF8qJZjBrRxW/s=
 			</data>
 		</dict>
 		<key>Modules/JioMeetCoreSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GzCVRJ7TYGe6VRbWWoh2OGFNSf/LaMD7J0Ck7tcYGFg=
+			pUjEzX9qmUqpf617i/LizpllLJsOCl1+hL3nXP9t/jY=
 			</data>
 		</dict>
 		<key>Modules/JioMeetCoreSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wZk6ed2fJyCOdiU7rkzFFoId6unh5xPvGWlR9r1xmWg=
+			PBWBuL0yoKOoZl9vcliCMjbdLwm3wnF8qJZjBrRxW/s=
 			</data>
 		</dict>
 		<key>Modules/JioMeetCoreSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fo01RyR/qAI3kBXk2/QM89R3WKdwQ735oA+vx4vA5N4=
+			XYg823QZKgTvcPD/Mdlp2oxOrWRSsix5JwtNCMtcKt8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
