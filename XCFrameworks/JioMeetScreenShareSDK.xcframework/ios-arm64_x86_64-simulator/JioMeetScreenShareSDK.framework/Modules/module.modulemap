@@ -1,6 +1,0 @@
-framework module JioMeetScreenShareSDK {
-  umbrella header "JioMeetScreenShareSDK.h"
-  export *
-
-  module * { export * }
-}
