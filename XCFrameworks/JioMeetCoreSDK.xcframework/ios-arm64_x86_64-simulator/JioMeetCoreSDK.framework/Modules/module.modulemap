@@ -1,0 +1,6 @@
+framework module JioMeetCoreSDK {
+  umbrella header "JioMeetCoreSDK.h"
+  export *
+
+  module * { export * }
+}

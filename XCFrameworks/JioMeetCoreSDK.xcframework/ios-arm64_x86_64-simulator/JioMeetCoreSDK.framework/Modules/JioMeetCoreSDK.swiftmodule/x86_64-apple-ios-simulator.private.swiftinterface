@@ -1,0 +1,887 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name JioMeetCoreSDK
+import AVFoundation
+import CallKit
+import CoreFoundation
+import Foundation
+import JMMediaStackSDK
+@_exported import JioMeetCoreSDK
+import JioMeetRtcEngineKit
+import JioMeetRtmKit
+import Swift
+import SystemConfiguration
+import UIKit
+import WebRTC
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum JMMeetingParticipantType : Swift.String, Swift.Decodable {
+  case speaker
+  case audience
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct JMMeetingParticipant : Swift.Decodable {
+  public var userId: Swift.String
+  public var participantUri: Swift.String
+  public var participantId: Swift.String
+  public var participantName: Swift.String
+  public var isMicOn: Swift.Bool
+  public var isVideoOn: Swift.Bool
+  public var participantJoinTime: Swift.String
+  public var isSharingScreen: Swift.Bool
+  public var isHandRaise: Swift.Bool
+  public var isCoHost: Swift.Bool
+  public var isHost: Swift.Bool
+  public var participantType: JioMeetCoreSDK.JMMeetingParticipantType
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol JMChatClientDelegate {
+  func jmChatClient(_ client: JioMeetCoreSDK.JMChatManager, didRecieveNewChatMessage message: JioMeetCoreSDK.JMChatMessage)
+  func jmChatClient(_ client: JioMeetCoreSDK.JMChatManager, didRecievePrivateChatMessage message: JioMeetCoreSDK.JMChatMessage, fromUserId: Swift.String)
+  func jmChatClient(_ client: JioMeetCoreSDK.JMChatManager, didChatMessagesRefreshed messages: [JioMeetCoreSDK.JMChatMessage])
+}
+extension JioMeetCoreSDK.JMChatClientDelegate {
+  public func jmChatClient(_ client: JioMeetCoreSDK.JMChatManager, didRecievePrivateChatMessage message: JioMeetCoreSDK.JMChatMessage, fromUserId: Swift.String)
+  public func jmChatClient(_ client: JioMeetCoreSDK.JMChatManager, didChatMessagesRefreshed messages: [JioMeetCoreSDK.JMChatMessage])
+}
+public struct JMAPISuccess : Swift.Decodable {
+  public let isSuccess: Swift.Bool
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class JMMeetingUser : JioMeetCoreSDK.JMMediaTrack {
+  public var userId: Swift.String
+  public var id: Swift.String
+  public var displayName: Swift.String
+  public var isHost: Swift.Bool
+  public var isCoHost: Swift.Bool
+  public var isSpeaker: Swift.Bool
+  public var isHandRaised: Swift.Bool
+  public var isLoudest: Swift.Bool
+  public var isHardAudioMuted: Swift.Bool
+  public var isSharingScreen: Swift.Bool
+  public var videoStreamView: UIKit.UIView?
+  public var reactionType: Swift.String
+  final public let sourceType: JioMeetCoreSDK.JMMediaTrackSourceType
+  public var audioTrack: JioMeetCoreSDK.JMAudioTrack
+  public var videoTrack: JioMeetCoreSDK.JMVideoTrack
+  public init()
+  public func getUserGuestID() -> Swift.String
+  @objc deinit
+}
+public enum JMApiRequestError : Swift.Error {
+  case invalidUrlRequest
+  case networkFailure((any Swift.Error)?)
+  case decodeFailure(any Swift.Error)
+  case invalidData
+  case failedApi(Foundation.Data?, Swift.Int)
+  case noData
+  case invalidResponse
+  case serverError
+  case unKnown
+  public func getStatusCode() -> Swift.Int
+  public func getMessageString(info: Swift.String? = "") -> Swift.String
+  public func getErrorCode() -> Swift.String
+}
+public struct JMRtcVideoEncoderConfig {
+  public init(width: Swift.Int, height: Swift.Int, bitrate: Swift.Int, frameRate: Swift.Int, orientation: Swift.Int)
+}
+public struct JMLiveStreamDetails : Swift.Codable {
+  public var id: Swift.String
+  public var userId: Swift.String
+  public var streamName: Swift.String
+  public var streamPlatform: Swift.String
+  public var streamKey: Swift.String
+  public var streamingUrl: Swift.String
+  public var streamPageUrl: Swift.String?
+  public var isDeleted: Swift.Bool
+  public var streaming: Swift.Bool
+  public var createdAt: Swift.String
+  public var modifiedAt: Swift.String
+  public var version: Swift.Int
+  public var isSelected: Swift.Bool
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum JMChatMessageType : Swift.String, Swift.Codable {
+  case normal
+  case system
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum JMSystemChatMessageAction : Swift.String, Swift.Codable {
+  case usermod
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct JMChatMessage : Swift.Decodable {
+  public let id: Swift.String
+  public let threadId: Swift.String
+  public let messageType: JioMeetCoreSDK.JMChatMessageType
+  public let jiomeetId: Swift.String
+  public let creatorId: Swift.String
+  public let creatorsName: Swift.String
+  public let creatorsLName: Swift.String
+  public let messageText: Swift.String
+  public var createdAt: Foundation.Date {
+    get
+  }
+  public var attachments: [JioMeetCoreSDK.JMChatMessageAttachment]?
+  public var addedUsers: [JioMeetCoreSDK.JMChatUser]?
+  public var removedUsers: [JioMeetCoreSDK.JMChatUser]?
+  public var systemAction: JioMeetCoreSDK.JMSystemChatMessageAction
+  public var isSystemMessage: Swift.Bool
+  public var isIncomingMessage: Swift.Bool
+  public let reciepients: [JioMeetCoreSDK.JMChatMessageRecipient]?
+  public init(from decoder: any Swift.Decoder) throws
+  public var isAttachmentMessage: Swift.Bool {
+    get
+  }
+  public var attachment: JioMeetCoreSDK.JMChatMessageAttachment? {
+    get
+  }
+  public func getOwnerFullName() -> Swift.String?
+}
+public struct JMChatMessageRecipient : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum JMRemoteStreamQuality {
+  case high
+  case low
+  public static func == (a: JioMeetCoreSDK.JMRemoteStreamQuality, b: JioMeetCoreSDK.JMRemoteStreamQuality) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum JMNetworkQuality : Swift.Int {
+  case good
+  case low
+  case bad
+  case detecting
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum JMUserLeftReason : Swift.Equatable {
+  case leaveMeeting
+  case networkDropped
+  case removedFromMeeting(byHost: Swift.String)
+  case becomeAudience
+  case none
+  public static func == (a: JioMeetCoreSDK.JMUserLeftReason, b: JioMeetCoreSDK.JMUserLeftReason) -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers public class JMScreenShareTrack : JioMeetCoreSDK.JMMediaTrack {
+  final public let id: Swift.String
+  final public let sourceType: JioMeetCoreSDK.JMMediaTrackSourceType
+  public var audioTrack: JioMeetCoreSDK.JMAudioTrack
+  public var videoTrack: JioMeetCoreSDK.JMVideoTrack
+  public var sharingUserId: Swift.String
+  public var sharingUserName: Swift.String
+  @objc deinit
+}
+public struct JMChatUser : Swift.Decodable {
+  public let name: Swift.String?
+  public let lname: Swift.String?
+  public let userId: Swift.String?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum JMClientConstants : Swift.String {
+  case osType
+  case maxParticipantsLimit
+  case getConfigOnLoad
+  case serverEnvironment
+  case rtmMessageRecieved
+  case sendRtmFromExternalSource
+  case appGroupName
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers public class JMClient : ObjectiveC.NSObject {
+  public var maxParticipantLimit: Swift.Int
+  public var maxAudienceLimit: Swift.Int
+  public var reactionsBaseUrl: Swift.String
+  public var reactionsCount: Swift.Int
+  public var isAudioOnlyModeEnabled: Swift.Bool
+  public var isWaterMarkEnabled: Swift.Bool {
+    get
+  }
+  public var delegate: (any JioMeetCoreSDK.JMClientDelegate)?
+  public var participantsListDelegate: (any JioMeetCoreSDK.JMParticipantsListUpdateDelegate)?
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension JioMeetCoreSDK.JMClient {
+  public func configureRtcEngine(appID: Swift.String)
+  public func getVideoPreview(placeholerView: UIKit.UIView?)
+  public func setLowQualityVideoStream(lowQualityVideoConfig: JioMeetCoreSDK.JMRtcVideoEncoderConfig)
+  public func setVideoConfiguration(videoEncoderConfig: JioMeetCoreSDK.JMRtcVideoEncoderConfig)
+  public func setUpDualStream(enable: Swift.Bool)
+}
+extension JioMeetCoreSDK.JMClient {
+  public func setParameters(params: [Swift.String : Any])
+  public func joinMeeting(data: JioMeetCoreSDK.JMJoinMeetingData, config: JioMeetCoreSDK.JMJoinMeetingConfig, delegate: (any JioMeetCoreSDK.JMClientDelegate)? = nil)
+  public func stopWaitingRoom()
+  public func addDelegate(identifier: Foundation.UUID, delegate: (any JioMeetCoreSDK.JMClientDelegate)?)
+  public func removeDelegate(identifier: Foundation.UUID)
+}
+extension JioMeetCoreSDK.JMClient {
+  public func muteLocalAudio(isMute: Swift.Bool)
+  public func muteLocalVideo(isMute: Swift.Bool)
+  public func switchCamera()
+  public func sendReactionType(type: Swift.String)
+  public func startPreview()
+  public func stopPreview()
+  public func raiseHand()
+  public func lowerHand()
+  public func leaveMeeting(reason: JioMeetCoreSDK.JMUserLeftReason)
+  public func declineHostRequestToTurnOnAudio(host: JioMeetCoreSDK.JMMeetingUser?)
+  public func declineHostRequestToTurnOnVideo(host: JioMeetCoreSDK.JMMeetingUser?)
+  public func switchLocalUserRole(newRole: JioMeetCoreSDK.JMUserRole)
+  public func applyVirtualBackground(_ type: JioMeetCoreSDK.JMVirtualBackgroundType)
+  public func setAudioOnlyMode(enabled: Swift.Bool)
+  public func switchAudioDevice(_ type: JioMeetCoreSDK.JMAudioDeviceType)
+  public func retryJoiningOnNetworkRestore()
+  public func startVideoPreview(placeholderView: UIKit.UIView)
+  public func stopVideoPreview()
+}
+extension JioMeetCoreSDK.JMClient {
+  public func subscribeRemoteUserAudio(id: Swift.String)
+  public func unsubscribeRemoteUserAudio(id: Swift.String)
+  public func subscribeRemoteUserVideo(id: Swift.String)
+  public func unsubscribeRemoteUserVideo(id: Swift.String)
+  public func setVideoStreamQuality(quality: JioMeetCoreSDK.JMRemoteStreamQuality, uid: Swift.String)
+  public func setRemoteUsersPlaybackVolumeLevel(newLevel: Swift.Float)
+}
+extension JioMeetCoreSDK.JMClient {
+  public func hardMuteUnmuteUsersAudio(isMute: Swift.Bool)
+  public func softMuteUsersAudio()
+  public func lowerAllUsersHands()
+  public func changeUserAudioState(userId: Swift.String, isOn: Swift.Bool)
+  public func changeUserVideoState(userId: Swift.String, isOn: Swift.Bool)
+  public func removeUserFromMeeting(userId: Swift.String)
+  public func removeUserFromMeeting(user: JioMeetCoreSDK.JMMeetingUser)
+  public func changeUserRole(userId: Swift.String, newRole: JioMeetCoreSDK.JMUserRole)
+  public func changeUserRole(user: JioMeetCoreSDK.JMMeetingUser, newRole: JioMeetCoreSDK.JMUserRole)
+  public func stopUserScreenShare(user: JioMeetCoreSDK.JMMeetingUser)
+  public func stopLocalScreenShare()
+  public func startRecording()
+  public func stopRecording()
+  public func lockMeeting()
+  public func unLockMeeting()
+  public func shareWhiteboard()
+  public func stopWhiteboard(completion: @escaping (Swift.Bool) -> Swift.Void)
+  public func updateUserCoHostRights(user: JioMeetCoreSDK.JMMeetingUser, makeCoHost: Swift.Bool)
+  public func setAudioFilePathForUserJoin(filePath: Swift.String)
+  public func setAudioFilePathForUserLeft(filePath: Swift.String)
+  public func createLiveStream(streamName: Swift.String, streamPlatform: Swift.String, streamingUrl: Swift.String, streamKey: Swift.String, completion: @escaping (_ isSuccess: Swift.Bool, _ errorMessage: Swift.String) -> Swift.Void)
+  public func getLiveStreamsList(completion: @escaping (_ response: [JioMeetCoreSDK.JMLiveStreamDetails], _ isSuccess: Swift.Bool) -> Swift.Void)
+  public func updateToStartLiveStream(streamChannel: Swift.String, serverUrl: Swift.String, streamKey: Swift.String, streamPageUrl: Swift.String, completion: @escaping (_ isSuccess: Swift.Bool, _ errorMessage: Swift.String) -> Swift.Void)
+  public func startLiveStream(streamChannel: Swift.String, completion: @escaping (_ isSuccess: Swift.Bool, _ errorMessage: Swift.String) -> Swift.Void)
+  public func editLiveStream(streamId: Swift.String, streamName: Swift.String, streamPlatform: Swift.String, streamingUrl: Swift.String, streamKey: Swift.String, completion: @escaping (_ isSuccess: Swift.Bool, _ errorMessage: Swift.String) -> Swift.Void)
+  public func deleteLiveStream(streamId: Swift.String, completion: @escaping (_ isSuccess: Swift.Bool) -> Swift.Void)
+  public func stopLiveStream(streamChannel: Swift.String, completion: @escaping (_ isSuccess: Swift.Bool, _ errorMessage: Swift.String) -> Swift.Void)
+  public func sendRealTimeMessage(messageInfo: [Swift.String : Any], target: JioMeetCoreSDK.JMRealTimeMessageTarget, completion: @escaping ((Swift.Bool) -> Swift.Void))
+}
+extension JioMeetCoreSDK.JMClient {
+  public func getServerEnvironment() -> JioMeetCoreSDK.JMApiServer
+  public func getCurrentAudioRoute() -> JioMeetCoreSDK.JMAudioRouteType
+  public func getAllMediaTracks() -> [any JioMeetCoreSDK.JMMediaTrack]
+  public func getMeetingLocalUser() -> JioMeetCoreSDK.JMMeetingUser
+  public func getMeetingRemoteUsers() -> [JioMeetCoreSDK.JMMeetingUser]
+  public func getMeetingUsers() -> [JioMeetCoreSDK.JMMeetingUser]
+  public func getParticipantsList() -> [JioMeetCoreSDK.JMMeetingParticipant]
+  public func getIsLiveStreamInProgress() -> Swift.Bool
+  public func getInProgressLiveStreamPlatform() -> Swift.String
+  public func isAudienceModeSupported() -> Swift.Bool
+}
+extension JioMeetCoreSDK.JMClient {
+  @available(*, deprecated, renamed: "hardMuteUnmuteUsersAudio(isMute:)")
+  public func hardMuteUnmuteParticipantsAudio(isMute: Swift.Bool)
+  @available(*, deprecated, renamed: "softMuteUsersAudio")
+  public func softMuteParticipantsAudio()
+  @available(*, deprecated, renamed: "lowerAllUsersHands")
+  public func lowerAllParticipantsHands()
+  @available(*, deprecated, renamed: "subscribeRemoteUserAudio(id:)")
+  public func subscribeParticipantAudio(uid: Swift.String)
+  @available(*, deprecated, renamed: "unsubscribeRemoteUserAudio(id:)")
+  public func unsubscribeParticipantAudio(uid: Swift.String)
+  @available(*, deprecated, renamed: "subscribeRemoteUserVideo(id:)")
+  public func subscribeParticipantVideo(uid: Swift.String)
+  @available(*, deprecated, renamed: "unsubscribeRemoteUserVideo(id:)")
+  public func unsubscribeParticipantVideo(uid: Swift.String)
+  @available(*, deprecated, renamed: "getMeetingUsers")
+  public func getAllUsers() -> [JioMeetCoreSDK.JMMeetingUser]
+  @available(*, deprecated, renamed: "getMeetingRemoteUsers")
+  public func getAllRemoteUsers() -> [JioMeetCoreSDK.JMMeetingUser]
+  @available(*, deprecated, renamed: "getMeetingLocalUser")
+  public func getLocalUser() -> JioMeetCoreSDK.JMMeetingUser
+  @available(*, deprecated, renamed: "shareWhiteboard")
+  public func startWhitebboard(remote: Swift.Bool, userName: Swift.String, userId: Swift.String)
+}
+public struct JMChatParticipant : Swift.Decodable {
+  public let id: Swift.String
+  public let name: Swift.String?
+  public let lname: Swift.String?
+  public init(from decoder: any Swift.Decoder) throws
+  public func getFullName() -> Swift.String
+}
+public struct JMLeaveChatThread : Swift.Decodable {
+  public let id: Swift.String
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct JMMeeting {
+  public let meetingID: Swift.String
+  public let meetingPin: Swift.String
+  public let meetingTitle: Swift.String
+  public let allMediaTracks: [any JioMeetCoreSDK.JMMediaTrack]
+  public let allParticipants: [JioMeetCoreSDK.JMMeetingUser]
+  public let remoteParticipants: [JioMeetCoreSDK.JMMeetingUser]
+  public let localParticipant: JioMeetCoreSDK.JMMeetingUser
+  public let isHardAudioMute: Swift.Bool
+  public let meetingOwnerName: Swift.String
+  public var isRecordingOn: Swift.Bool
+  public var isMeetingLocked: Swift.Bool
+  public var isWhiteboardShared: Swift.Bool
+}
+public typealias GetChatThreadResponse = (_ thread: JioMeetCoreSDK.JMChatThread?, _ error: JioMeetCoreSDK.JMApiRequestError?) -> Swift.Void
+public typealias SendChatMessageResponse = (_ chatMessage: JioMeetCoreSDK.JMChatMessage?, _ error: JioMeetCoreSDK.JMApiRequestError?) -> Swift.Void
+public typealias GetChatMessageResponse = (_ response: JioMeetCoreSDK.JMThreadChatMessages?, _ error: JioMeetCoreSDK.JMApiRequestError?) -> Swift.Void
+public typealias GetChatActiveParticipantsResponse = (_ response: [JioMeetCoreSDK.JMMeetingParticipant2], _ error: JioMeetCoreSDK.JMApiRequestError?) -> Swift.Void
+public typealias GetPrivateChatThreadIdResponse = (_ response: Swift.String?, _ error: JioMeetCoreSDK.JMApiRequestError?) -> Swift.Void
+public typealias MarkMessageAsReadResponse = (_ response: JioMeetCoreSDK.JMAPISuccess?, _ error: JioMeetCoreSDK.JMApiRequestError?) -> Swift.Void
+@objc @_inheritsConvenienceInitializers public class JMChatManager : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum JMMediaTrackSourceType {
+  case user
+  case screenShare
+  public static func == (a: JioMeetCoreSDK.JMMediaTrackSourceType, b: JioMeetCoreSDK.JMMediaTrackSourceType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol JMMediaTrack {
+  var id: Swift.String { get }
+  var sourceType: JioMeetCoreSDK.JMMediaTrackSourceType { get }
+  var videoTrack: JioMeetCoreSDK.JMVideoTrack { get set }
+  var audioTrack: JioMeetCoreSDK.JMAudioTrack { get set }
+}
+@_hasMissingDesignatedInitializers public class JMAudioTrack {
+  final public let sourceId: Swift.String
+  public var isMuted: Swift.Bool
+  public var isHardAudioMuted: Swift.Bool {
+    get
+  }
+  public var isLoudest: Swift.Bool {
+    get
+  }
+  public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class JMVideoTrack {
+  final public let sourceId: Swift.String
+  public var isMuted: Swift.Bool
+  public var streamView: UIKit.UIView?
+  public init()
+  @objc deinit
+}
+public protocol JMVBGViewProtocol {
+  static func presentView(parentView: UIKit.UIView, meetingClient: JioMeetCoreSDK.JMClient?, onViewClose: @escaping (() -> Swift.Void))
+}
+public enum JMChatMessageDestination : Swift.Equatable {
+  case group
+  case user(userId: Swift.String)
+  public static func == (a: JioMeetCoreSDK.JMChatMessageDestination, b: JioMeetCoreSDK.JMChatMessageDestination) -> Swift.Bool
+}
+extension JioMeetCoreSDK.JMClient {
+  public func addChatDelegate(delegate: (any JioMeetCoreSDK.JMChatClientDelegate)?, identifier: Foundation.UUID)
+  public func removeChatDelegate(identifier: Foundation.UUID)
+  public func getMainChatThread(completion: @escaping JioMeetCoreSDK.GetChatThreadResponse)
+  public func getMeetingChatMessages() -> [JioMeetCoreSDK.JMChatMessage]
+  public func getAllActiveParticipants(completion: @escaping JioMeetCoreSDK.GetChatActiveParticipantsResponse)
+  public func getPrivateChatThread(with userId: Swift.String, completion: @escaping JioMeetCoreSDK.GetChatThreadResponse)
+  public func getPrivateChatMessages(userId: Swift.String, comletion: @escaping JioMeetCoreSDK.GetChatMessageResponse)
+  public func sendChatTextMessage(message: Swift.String, completion: @escaping JioMeetCoreSDK.SendChatMessageResponse)
+  public func sendPrivateChatTextMessage(message: Swift.String, userId: Swift.String, completion: @escaping JioMeetCoreSDK.SendChatMessageResponse)
+  public func getChatThreadMessages(threadId: Swift.String, completion: @escaping JioMeetCoreSDK.GetChatMessageResponse)
+  public func sendAttachmentMessage(messageText: Swift.String, fileID: Swift.String, fileName: Swift.String, fileSize: Swift.String, fileURL: Swift.String, completion: @escaping (_ chatMessage: JioMeetCoreSDK.JMChatMessage?, _ error: JioMeetCoreSDK.JMApiRequestError?) -> Swift.Void)
+  public func markReadMessages(lastMessageId: Swift.String, threadId: Swift.String, completion: @escaping JioMeetCoreSDK.MarkMessageAsReadResponse)
+}
+public enum JMVirtaulBackgroundBlurIntensity : Swift.UInt, Swift.Codable {
+  case low
+  case medium
+  case high
+  public init?(rawValue: Swift.UInt)
+  public typealias RawValue = Swift.UInt
+  public var rawValue: Swift.UInt {
+    get
+  }
+}
+public enum JMVirtualBackgroundType {
+  case none
+  case blur(intensity: JioMeetCoreSDK.JMVirtaulBackgroundBlurIntensity)
+  case image(path: Swift.String)
+  case color(color: UIKit.UIColor)
+}
+public enum JMAudioDeviceType : Swift.Int {
+  case speaker, device, audioOff
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum JMAudioVideoErrorType : Swift.Int {
+  case reconnectError
+  case deviceBusyError
+  case permissionError
+  case multipleAppsOrBackground
+  case ok
+  case unknown
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum JMConnectionState : Swift.Int {
+  case disconnected
+  case connecting
+  case connected
+  case reconnecting
+  case failed
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum JMRealTimeMessageTarget {
+  case toAll
+  case toPeer(participantId: Swift.String)
+}
+public enum JMAudioRouteType : Swift.Int, Swift.CustomStringConvertible {
+  case speaker
+  case blueTooth
+  case audioHandset
+  case headPhone
+  case audioOff
+  case other
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct JMMeetingNetworkStats {
+  public let latency: Swift.Int
+  public let uplinkPacketLoss: Swift.Int
+  public let downlinkPacketLoss: Swift.Int
+  public let uplinkRate: Swift.Int
+  public let downlinkRate: Swift.Int
+  public let totalDataSent: Swift.Int
+  public let totalDataRecieved: Swift.Int
+}
+public struct JMChatThread : Swift.Decodable {
+  public let id: Swift.String
+  public var jiomeetId: Swift.String?
+  public var name: Swift.String?
+  public var status: Swift.String?
+  public var isRestrictedChat: Swift.Bool?
+  public var numberOfAttachments: Swift.Int?
+  public var context: Swift.String?
+  public var createdBy: Swift.String?
+  public var createdAt: Foundation.Date?
+  public var modifiedAt: Foundation.Date?
+  public var update: Swift.Bool?
+  public var members: [JioMeetCoreSDK.JMChatParticipant]?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum JMUserRole : Swift.Equatable {
+  case host(hostToken: Swift.String)
+  case speaker
+  case audience
+  public static func == (a: JioMeetCoreSDK.JMUserRole, b: JioMeetCoreSDK.JMUserRole) -> Swift.Bool
+}
+public struct JMJoinMeetingData {
+  public let meetingId: Swift.String
+  public let meetingPin: Swift.String
+  public let displayName: Swift.String
+  public init(meetingId: Swift.String, meetingPin: Swift.String, displayName: Swift.String)
+}
+public struct JMJoinMeetingConfig {
+  public let userRole: JioMeetCoreSDK.JMUserRole
+  public let isInitialAudioOn: Swift.Bool
+  public let isInitialVideoOn: Swift.Bool
+  public let canShareScreen: Swift.Bool
+  public let canShareWhiteBoard: Swift.Bool
+  public init(userRole: JioMeetCoreSDK.JMUserRole, isInitialAudioOn: Swift.Bool, isInitialVideoOn: Swift.Bool)
+}
+public struct JMChatMessageAttachment : Swift.Decodable, Swift.Identifiable {
+  public var id: Swift.String {
+    get
+  }
+  public let fileId: Swift.String
+  public let fileName: Swift.String
+  public let fileSize: Swift.String
+  public let downloadUrl: Swift.String
+  public let imageTrancodedURL: Swift.String
+  public let streamingUrl: Swift.String
+  public let documentUrl: Swift.String
+  public init(from decoder: any Swift.Decoder) throws
+  public typealias ID = Swift.String
+}
+public struct JMThreadChatMessages : Swift.Decodable {
+  public var messages: [JioMeetCoreSDK.JMChatMessage]?
+  public var moreAvailable: Swift.Bool?
+  public var totalCount: Swift.Int?
+  public var unreadCount: Swift.Int?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum JMHTTPMethod : Swift.String {
+  case get
+  case post
+  case put
+  case delete
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum JMApiServerScheme : Swift.String {
+  case https
+  case http
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum JMApiServer : Swift.String {
+  case staging
+  case preStage
+  case rc
+  case production
+  case virginGroups
+  public func getApiUrl() -> Swift.String
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum JMCurrentUserType {
+  case guest
+  case loggedIn
+  public static func == (a: JioMeetCoreSDK.JMCurrentUserType, b: JioMeetCoreSDK.JMCurrentUserType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum JMMeetingJoinError : Swift.Error {
+  case invalidConfiguration
+  case invalidMeetingDetails
+  case meetingExpired
+  case meetingLocked
+  case failedToRegisterUser
+  case maxParticipantsLimit
+  case partyLimitReached
+  case failedToJoinCall(errorMessage: Swift.String)
+  case other(errorMessage: Swift.String)
+}
+public enum JMMeetingDataRefreshReason {
+  case periodic
+  case foregroundTransition
+  case networkRestored
+  case other
+  public static func == (a: JioMeetCoreSDK.JMMeetingDataRefreshReason, b: JioMeetCoreSDK.JMMeetingDataRefreshReason) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum JMScreenShareState {
+  case started(mediaTrack: JioMeetCoreSDK.JMScreenShareTrack)
+  case stopped(reason: JioMeetCoreSDK.JMUserLeftReason, mediaTrackId: Swift.String)
+}
+public enum AudioVideoActionType {
+  case startAudio
+  case stopAudio
+  case startVideo
+  case stopVideo
+  case micDecline
+  case videoDecline
+  public static func == (a: JioMeetCoreSDK.AudioVideoActionType, b: JioMeetCoreSDK.AudioVideoActionType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum AudioVideoState {
+  case startAudio
+  case stopAudio
+  case startVideo
+  case stopVideo
+  public static func == (a: JioMeetCoreSDK.AudioVideoState, b: JioMeetCoreSDK.AudioVideoState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum JMMeetingError {
+  case recordingNotStarted(errorMessage: Swift.String)
+  case recordingNotStopped(errorMessage: Swift.String)
+  case cannotChangeMicStateInAudienceMode
+  case cannotChangeCameraStateinAudienceMode
+  case audioPermissionNotGranted
+  case videoPermissionNotGranted
+}
+public enum JMWaitingRoomState {
+  case started
+  case admitted
+  case rejected
+  case leave
+  public static func == (a: JioMeetCoreSDK.JMWaitingRoomState, b: JioMeetCoreSDK.JMWaitingRoomState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum LiveStreamState {
+  case ytLiveStream
+  case fbliveStream
+  case customLiveStream
+  case ytlivestreamerror
+  case fblivestreamerror
+  case customlivestreamerror
+  public static func == (a: JioMeetCoreSDK.LiveStreamState, b: JioMeetCoreSDK.LiveStreamState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum JMWhiteBoardState {
+  case started(by: Swift.String?, userId: Swift.String?, whiteboardUrl: Swift.String)
+  case stopped(by: Swift.String?, userId: Swift.String?)
+}
+public protocol JMClientDelegate {
+  func jmClient(didLocalUserFailedToJoinMeeting error: JioMeetCoreSDK.JMMeetingJoinError)
+  func jmClient(didErrorOccured error: JioMeetCoreSDK.JMMeetingError)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalUserJoinedMeeting user: JioMeetCoreSDK.JMMeetingUser)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalUserMicStatusUpdated isMuted: Swift.Bool)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalUserVideoStatusUpdated isMuted: Swift.Bool)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalUserHandRaiseStatusUpdated isRaised: Swift.Bool)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalUserLeftMeeting reason: JioMeetCoreSDK.JMUserLeftReason)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didRemoteUserJoinedMeeting user: JioMeetCoreSDK.JMMeetingUser)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didRemoteUserMicStatusUpdated user: JioMeetCoreSDK.JMMeetingUser, isMuted: Swift.Bool)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didRemoteUserVideoStatusUpdated user: JioMeetCoreSDK.JMMeetingUser, isMuted: Swift.Bool)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didRemoteUserHandRaiseStatusUpdated user: JioMeetCoreSDK.JMMeetingUser, isRaised: Swift.Bool)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didRemoteUserLeftMeeting user: JioMeetCoreSDK.JMMeetingUser, reason: JioMeetCoreSDK.JMUserLeftReason)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didHostEnableHardAudioMute host: JioMeetCoreSDK.JMMeetingUser?)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didHostDisableHardAudioMute host: JioMeetCoreSDK.JMMeetingUser?)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didHostEnableSoftAudioMute host: JioMeetCoreSDK.JMMeetingUser?)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didHostLowerAllHands host: JioMeetCoreSDK.JMMeetingUser?)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLoudestSpeakerUpdated user: JioMeetCoreSDK.JMMeetingUser?)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didMeetingDataRefreshed reason: JioMeetCoreSDK.JMMeetingDataRefreshReason)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didNetworkQualityUpdated quality: JioMeetCoreSDK.JMNetworkQuality)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didMeetingNetworkStatsUpdated stats: JioMeetCoreSDK.JMMeetingNetworkStats)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didNetworkConnectedStateUpdated isConnected: Swift.Bool)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didAudioOutputRouteChanged newRoute: JioMeetCoreSDK.JMAudioRouteType)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalScreenShareStateChanged state: JioMeetCoreSDK.JMScreenShareState)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didRemoteScreenShareStateChanged state: JioMeetCoreSDK.JMScreenShareState)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didRecordingStarted user: JioMeetCoreSDK.JMMeetingUser?)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didRecordingStopped user: JioMeetCoreSDK.JMMeetingUser?)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didHostRequestToChangeAudioVideoState host: JioMeetCoreSDK.JMMeetingUser?, state: JioMeetCoreSDK.AudioVideoState)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didUserDeclineToChangeAudioVideoState user: JioMeetCoreSDK.JMMeetingUser?, state: JioMeetCoreSDK.AudioVideoState)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalUserMovedToAudience user: JioMeetCoreSDK.JMMeetingUser?)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalUserMovedToParticipant user: JioMeetCoreSDK.JMMeetingUser?)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didUserMovedToAudience user: JioMeetCoreSDK.JMMeetingUser?)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didUserMovedToParticipants user: JioMeetCoreSDK.JMMeetingUser?)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didMeetingLocked host: JioMeetCoreSDK.JMMeetingUser?)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didMeetingUnLocked host: JioMeetCoreSDK.JMMeetingUser?)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalSpeakerVolumeChanges newLevel: Swift.Int, localUserSpeaking: Swift.Bool)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didDetectActiveSpeakers speakers: [JioMeetCoreSDK.JMMeetingUser])
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalAudioStateChangeFailed errorType: JioMeetCoreSDK.JMAudioVideoErrorType, errorDesc: Swift.String)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalVideoStateChangeFailed errorType: JioMeetCoreSDK.JMAudioVideoErrorType, errorDesc: Swift.String)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalUserFallBackToAudioOnlyMode isFallbackOrRecover: Swift.Bool)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didRemoteUserFallBackToAudioOnlyMode isFallbackOrRecover: Swift.Bool, user: JioMeetCoreSDK.JMMeetingUser)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalParticipantConnectionChangedTo state: JioMeetCoreSDK.JMConnectionState)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didCoHostRightsChanged user: JioMeetCoreSDK.JMMeetingUser, isCoHost: Swift.Bool)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didRecieveReaction user: JioMeetCoreSDK.JMMeetingUser, reactionsType: Swift.String)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didWhiteboardStarted user: JioMeetCoreSDK.JMMeetingUser, whiteboardUrl: Swift.String, senderName: Swift.String)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didWhiteboardStopped user: JioMeetCoreSDK.JMMeetingUser)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didWaitingRoomStateChanged state: JioMeetCoreSDK.JMWaitingRoomState)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLiveStreamStateChanged state: JioMeetCoreSDK.LiveStreamState, streaming: Swift.Bool)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didMetaDataUpdatedForUser user: JioMeetCoreSDK.JMMeetingUser)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalWhiteboardStateChanged state: JioMeetCoreSDK.JMWhiteBoardState)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didRemoteWhiteboardStateChanged state: JioMeetCoreSDK.JMWhiteBoardState)
+  func hideMeetingOptionsViewForReactions()
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, showReactionForLocalUser user: JioMeetCoreSDK.JMMeetingUser, reactionsType: Swift.String)
+  func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didRecieveLogMessage log: Swift.String)
+}
+extension JioMeetCoreSDK.JMClientDelegate {
+  public func jmClient(didLocalUserFailedToJoinMeeting error: JioMeetCoreSDK.JMMeetingJoinError)
+  public func jmClient(didErrorOccured error: JioMeetCoreSDK.JMMeetingError)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalUserJoinedMeeting user: JioMeetCoreSDK.JMMeetingUser)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalUserMicStatusUpdated isMuted: Swift.Bool)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalUserVideoStatusUpdated isMuted: Swift.Bool)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalUserHandRaiseStatusUpdated isRaised: Swift.Bool)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalUserLeftMeeting reason: JioMeetCoreSDK.JMUserLeftReason)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didRemoteUserJoinedMeeting user: JioMeetCoreSDK.JMMeetingUser)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didRemoteUserMicStatusUpdated user: JioMeetCoreSDK.JMMeetingUser, isMuted: Swift.Bool)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didRemoteUserVideoStatusUpdated user: JioMeetCoreSDK.JMMeetingUser, isMuted: Swift.Bool)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didRemoteUserHandRaiseStatusUpdated user: JioMeetCoreSDK.JMMeetingUser, isRaised: Swift.Bool)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didRemoteUserLeftMeeting user: JioMeetCoreSDK.JMMeetingUser, reason: JioMeetCoreSDK.JMUserLeftReason)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didHostEnableHardAudioMute host: JioMeetCoreSDK.JMMeetingUser?)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didHostDisableHardAudioMute host: JioMeetCoreSDK.JMMeetingUser?)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didHostEnableSoftAudioMute host: JioMeetCoreSDK.JMMeetingUser?)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didHostLowerAllHands host: JioMeetCoreSDK.JMMeetingUser?)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLoudestSpeakerUpdated user: JioMeetCoreSDK.JMMeetingUser?)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didMeetingDataRefreshed reason: JioMeetCoreSDK.JMMeetingDataRefreshReason)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didNetworkQualityUpdated quality: JioMeetCoreSDK.JMNetworkQuality)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didMeetingNetworkStatsUpdated stats: JioMeetCoreSDK.JMMeetingNetworkStats)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didNetworkConnectedStateUpdated isConnected: Swift.Bool)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didAudioOutputRouteChanged newRoute: JioMeetCoreSDK.JMAudioRouteType)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalScreenShareStateChanged state: JioMeetCoreSDK.JMScreenShareState)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didRemoteScreenShareStateChanged state: JioMeetCoreSDK.JMScreenShareState)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didRecordingStarted user: JioMeetCoreSDK.JMMeetingUser?)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didRecordingStopped user: JioMeetCoreSDK.JMMeetingUser?)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didHostRequestToChangeAudioVideoState host: JioMeetCoreSDK.JMMeetingUser?, state: JioMeetCoreSDK.AudioVideoState)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didUserDeclineToChangeAudioVideoState user: JioMeetCoreSDK.JMMeetingUser?, state: JioMeetCoreSDK.AudioVideoState)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalUserMovedToAudience user: JioMeetCoreSDK.JMMeetingUser?)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalUserMovedToParticipant user: JioMeetCoreSDK.JMMeetingUser?)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didUserMovedToAudience user: JioMeetCoreSDK.JMMeetingUser?)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didUserMovedToParticipants user: JioMeetCoreSDK.JMMeetingUser?)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didMeetingLocked host: JioMeetCoreSDK.JMMeetingUser?)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didMeetingUnLocked host: JioMeetCoreSDK.JMMeetingUser?)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalSpeakerVolumeChanges newLevel: Swift.Int, localUserSpeaking: Swift.Bool)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didDetectActiveSpeakers speakers: [JioMeetCoreSDK.JMMeetingUser])
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalAudioStateChangeFailed errorType: JioMeetCoreSDK.JMAudioVideoErrorType, errorDesc: Swift.String)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalVideoStateChangeFailed errorType: JioMeetCoreSDK.JMAudioVideoErrorType, errorDesc: Swift.String)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalUserFallBackToAudioOnlyMode isFallbackOrRecover: Swift.Bool)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didRemoteUserFallBackToAudioOnlyMode isFallbackOrRecover: Swift.Bool, user: JioMeetCoreSDK.JMMeetingUser)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalParticipantConnectionChangedTo state: JioMeetCoreSDK.JMConnectionState)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didCoHostRightsChanged user: JioMeetCoreSDK.JMMeetingUser, isCoHost: Swift.Bool)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didRecieveReaction user: JioMeetCoreSDK.JMMeetingUser, reactionsType: Swift.String)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didWhiteboardStarted user: JioMeetCoreSDK.JMMeetingUser, whiteboardUrl: Swift.String, senderName: Swift.String)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didWhiteboardStopped user: JioMeetCoreSDK.JMMeetingUser)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didWaitingRoomStateChanged state: JioMeetCoreSDK.JMWaitingRoomState)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLiveStreamStateChanged state: JioMeetCoreSDK.LiveStreamState, streaming: Swift.Bool)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didMetaDataUpdatedForUser user: JioMeetCoreSDK.JMMeetingUser)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didLocalWhiteboardStateChanged state: JioMeetCoreSDK.JMWhiteBoardState)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didRemoteWhiteboardStateChanged state: JioMeetCoreSDK.JMWhiteBoardState)
+  public func hideMeetingOptionsViewForReactions()
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, showReactionForLocalUser user: JioMeetCoreSDK.JMMeetingUser, reactionsType: Swift.String)
+  public func jmClient(_ meeting: JioMeetCoreSDK.JMMeeting, didRecieveLogMessage log: Swift.String)
+}
+public protocol NetworkReachabilityHandlerDelegate {
+  func didNetworkStateChanged(isConnected: Swift.Bool)
+}
+@_hasMissingDesignatedInitializers public class NetworkReachabilityHandler {
+  public static let instance: JioMeetCoreSDK.NetworkReachabilityHandler
+  @objc deinit
+}
+extension JioMeetCoreSDK.NetworkReachabilityHandler {
+  public func addDelegates(delegate: (any JioMeetCoreSDK.NetworkReachabilityHandlerDelegate)?, identifier: Foundation.UUID)
+  public func removeDelegate(identifier: Foundation.UUID)
+}
+public protocol JMParticipantsListUpdateDelegate {
+  func jmParticipantPanel(didParticipantUpserted participant: JioMeetCoreSDK.JMMeetingParticipant)
+  func jmParticipantPanel(didParticipantRemoved participant: JioMeetCoreSDK.JMMeetingParticipant)
+  func jmParticipantPanel(didParticipantDataRefreshed newData: [JioMeetCoreSDK.JMMeetingParticipant])
+}
+public struct JMMeetingParticipant2 : Swift.Decodable {
+  public let memberId: Swift.String
+  public let name: Swift.String
+  public let lname: Swift.String
+  public var threadId: Swift.String?
+  public var lastMessageId: Swift.String?
+  public var recipients: [JioMeetCoreSDK.Recipient]?
+  public var unread: Swift.Bool?
+  public init(from decoder: any Swift.Decoder) throws
+  public mutating func setUnreadStatus(localUserId: Swift.String)
+}
+public struct Recipient : Swift.Codable {
+  public let userId: Swift.String
+  public let unread: Swift.Bool
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension JioMeetCoreSDK.JMMeetingParticipantType : Swift.Equatable {}
+extension JioMeetCoreSDK.JMMeetingParticipantType : Swift.Hashable {}
+extension JioMeetCoreSDK.JMMeetingParticipantType : Swift.RawRepresentable {}
+extension JioMeetCoreSDK.JMChatMessageType : Swift.Equatable {}
+extension JioMeetCoreSDK.JMChatMessageType : Swift.Hashable {}
+extension JioMeetCoreSDK.JMChatMessageType : Swift.RawRepresentable {}
+extension JioMeetCoreSDK.JMSystemChatMessageAction : Swift.Equatable {}
+extension JioMeetCoreSDK.JMSystemChatMessageAction : Swift.Hashable {}
+extension JioMeetCoreSDK.JMSystemChatMessageAction : Swift.RawRepresentable {}
+extension JioMeetCoreSDK.JMRemoteStreamQuality : Swift.Equatable {}
+extension JioMeetCoreSDK.JMRemoteStreamQuality : Swift.Hashable {}
+extension JioMeetCoreSDK.JMNetworkQuality : Swift.Equatable {}
+extension JioMeetCoreSDK.JMNetworkQuality : Swift.Hashable {}
+extension JioMeetCoreSDK.JMNetworkQuality : Swift.RawRepresentable {}
+extension JioMeetCoreSDK.JMClientConstants : Swift.Equatable {}
+extension JioMeetCoreSDK.JMClientConstants : Swift.Hashable {}
+extension JioMeetCoreSDK.JMClientConstants : Swift.RawRepresentable {}
+extension JioMeetCoreSDK.JMMediaTrackSourceType : Swift.Equatable {}
+extension JioMeetCoreSDK.JMMediaTrackSourceType : Swift.Hashable {}
+extension JioMeetCoreSDK.JMVirtaulBackgroundBlurIntensity : Swift.Equatable {}
+extension JioMeetCoreSDK.JMVirtaulBackgroundBlurIntensity : Swift.Hashable {}
+extension JioMeetCoreSDK.JMVirtaulBackgroundBlurIntensity : Swift.RawRepresentable {}
+extension JioMeetCoreSDK.JMAudioDeviceType : Swift.Equatable {}
+extension JioMeetCoreSDK.JMAudioDeviceType : Swift.Hashable {}
+extension JioMeetCoreSDK.JMAudioDeviceType : Swift.RawRepresentable {}
+extension JioMeetCoreSDK.JMAudioVideoErrorType : Swift.Equatable {}
+extension JioMeetCoreSDK.JMAudioVideoErrorType : Swift.Hashable {}
+extension JioMeetCoreSDK.JMAudioVideoErrorType : Swift.RawRepresentable {}
+extension JioMeetCoreSDK.JMConnectionState : Swift.Equatable {}
+extension JioMeetCoreSDK.JMConnectionState : Swift.Hashable {}
+extension JioMeetCoreSDK.JMConnectionState : Swift.RawRepresentable {}
+extension JioMeetCoreSDK.JMAudioRouteType : Swift.Equatable {}
+extension JioMeetCoreSDK.JMAudioRouteType : Swift.Hashable {}
+extension JioMeetCoreSDK.JMAudioRouteType : Swift.RawRepresentable {}
+extension JioMeetCoreSDK.JMHTTPMethod : Swift.Equatable {}
+extension JioMeetCoreSDK.JMHTTPMethod : Swift.Hashable {}
+extension JioMeetCoreSDK.JMHTTPMethod : Swift.RawRepresentable {}
+extension JioMeetCoreSDK.JMApiServerScheme : Swift.Equatable {}
+extension JioMeetCoreSDK.JMApiServerScheme : Swift.Hashable {}
+extension JioMeetCoreSDK.JMApiServerScheme : Swift.RawRepresentable {}
+extension JioMeetCoreSDK.JMApiServer : Swift.Equatable {}
+extension JioMeetCoreSDK.JMApiServer : Swift.Hashable {}
+extension JioMeetCoreSDK.JMApiServer : Swift.RawRepresentable {}
+extension JioMeetCoreSDK.JMCurrentUserType : Swift.Equatable {}
+extension JioMeetCoreSDK.JMCurrentUserType : Swift.Hashable {}
+extension JioMeetCoreSDK.JMMeetingDataRefreshReason : Swift.Equatable {}
+extension JioMeetCoreSDK.JMMeetingDataRefreshReason : Swift.Hashable {}
+extension JioMeetCoreSDK.AudioVideoActionType : Swift.Equatable {}
+extension JioMeetCoreSDK.AudioVideoActionType : Swift.Hashable {}
+extension JioMeetCoreSDK.AudioVideoState : Swift.Equatable {}
+extension JioMeetCoreSDK.AudioVideoState : Swift.Hashable {}
+extension JioMeetCoreSDK.JMWaitingRoomState : Swift.Equatable {}
+extension JioMeetCoreSDK.JMWaitingRoomState : Swift.Hashable {}
+extension JioMeetCoreSDK.LiveStreamState : Swift.Equatable {}
+extension JioMeetCoreSDK.LiveStreamState : Swift.Hashable {}
