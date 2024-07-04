@@ -1,0 +1,90 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name JioMeetScreenShareSDK
+import CoreFoundation
+import CoreMedia
+import Foundation
+import JMMediaStackSDK
+import JioMeetRtcEngineKit
+@_exported import JioMeetScreenShareSDK
+import ReplayKit
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_inheritsConvenienceInitializers open class JMScreenShareHandler : ReplayKit.RPBroadcastSampleHandler {
+  open func getAppGroupsIdentifier() -> Swift.String
+  @objc override dynamic open func broadcastStarted(withSetupInfo setupInfo: [Swift.String : ObjectiveC.NSObject]?)
+  @objc override dynamic open func broadcastPaused()
+  @objc override dynamic open func broadcastResumed()
+  @objc override dynamic open func broadcastFinished()
+  @objc override dynamic open func processSampleBuffer(_ sampleBuffer: CoreMedia.CMSampleBuffer, with sampleBufferType: ReplayKit.RPSampleBufferType)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension JioMeetScreenShareSDK.JMScreenShareHandler : JioMeetScreenShareSDK.JMScreenShareManagerDelegate {
+  @objc dynamic public func didFinishBroadcastWithError(error: Foundation.NSError)
+  @objc dynamic public func didRequestScreenShareStartData() -> Foundation.NSDictionary
+  @objc dynamic public func didRequestScreenShareStopReason() -> Swift.String?
+}
+public enum ScreenShareStrings : Swift.String {
+  case rtcAppId
+  case rtcRoomId
+  case rtcToken
+  case shareUid
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ScreenShareUserDefaultsKeys : Swift.String {
+  case rtcAppIdKey
+  case rtcRoomIdKey
+  case rtcTokenKey
+  case shareUidKey
+  case screenShareStopReason
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ScreenShareNotifications : Swift.String {
+  case replayKitStartedBroadcast
+  case replayKitStoppedBroadcast
+  case screenShareDataAvailableToStart
+  case screenShareStreamPushStarted
+  case screenShareStreamPushStopped
+  case screenShareForceStopRequest
+  case requestToStartScreenShare
+  case requestToStopScreenShare
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class AgoraEngineScreenShareManager : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension JioMeetScreenShareSDK.AgoraEngineScreenShareManager : JioMeetRtcEngineKit.AgoraRtcEngineDelegate {
+  @objc dynamic public func rtcEngine(_ engine: JioMeetRtcEngineKit.AgoraRtcEngineKit, didOccurError errorCode: JioMeetRtcEngineKit.AgoraErrorCode)
+  @objc dynamic public func rtcEngine(_ engine: JioMeetRtcEngineKit.AgoraRtcEngineKit, didJoinChannel channel: Swift.String, withUid uid: Swift.UInt, elapsed: Swift.Int)
+  @objc dynamic public func rtcEngine(_ engine: JioMeetRtcEngineKit.AgoraRtcEngineKit, didLeaveChannelWith stats: JioMeetRtcEngineKit.AgoraChannelStats)
+}
+@objc public protocol JMScreenShareManagerDelegate {
+  @objc func didFinishBroadcastWithError(error: Foundation.NSError)
+  @objc func didRequestScreenShareStartData() -> Foundation.NSDictionary
+  @objc func didRequestScreenShareStopReason() -> Swift.String?
+}
+extension JioMeetScreenShareSDK.ScreenShareStrings : Swift.Equatable {}
+extension JioMeetScreenShareSDK.ScreenShareStrings : Swift.Hashable {}
+extension JioMeetScreenShareSDK.ScreenShareStrings : Swift.RawRepresentable {}
+extension JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys : Swift.Equatable {}
+extension JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys : Swift.Hashable {}
+extension JioMeetScreenShareSDK.ScreenShareUserDefaultsKeys : Swift.RawRepresentable {}
+extension JioMeetScreenShareSDK.ScreenShareNotifications : Swift.Equatable {}
+extension JioMeetScreenShareSDK.ScreenShareNotifications : Swift.Hashable {}
+extension JioMeetScreenShareSDK.ScreenShareNotifications : Swift.RawRepresentable {}
