@@ -28,8 +28,8 @@ let package = Package(
 	targets: [
 		.binaryTarget(
 			name: "JioMeetCoreSDK",
-			url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/public/new_arch/v_3_0_2/JioMeetCoreSDK.xcframework.zip",
-			checksum: "bffea4f4a74570f528961237e5a62fce516bd87dc4053f5d52884b6bcac27d2c"
+			url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/public/new_arch/4_0_1/JioMeetCoreSDK.xcframework.zip",
+			checksum: "6f4a8ef62d7f1cc852efc16f1dd791be1d670ed88b189ba80dd0de8008b0ebef"
 		),
 		.target(
 			name: "JioMeetCoreSDKTarget",
