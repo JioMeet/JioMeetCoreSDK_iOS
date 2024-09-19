@@ -15,11 +15,6 @@ let package = Package(
 	],
 	dependencies: [
 		.package(
-			name: "JioMeetRtcEngine_iOS",
-			url: "https://github.com/JioMeet/JioMeet-rtc-engine-ios.git",
-			.exact("3.7.2")
-		),
-		.package(
 			name: "JioMeetMediaStackSDK",
 			url: "https://github.com/JioMeet/JMMediaStackSDK_iOS.git",
 			.upToNextMajor(from: "1.0.0")
@@ -28,15 +23,13 @@ let package = Package(
 	targets: [
 		.binaryTarget(
 			name: "JioMeetCoreSDK",
-			url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/public/new_arch/4_0_1/JioMeetCoreSDK.xcframework.zip",
-			checksum: "6f4a8ef62d7f1cc852efc16f1dd791be1d670ed88b189ba80dd0de8008b0ebef"
+			url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/public/new_arch/4_0_2/JioMeetCoreSDK.xcframework.zip",
+			checksum: "886e28d6155169f7c733fbfcbb48cfa5da58e144c572b65f12ee74c15fe29eca"
 		),
 		.target(
 			name: "JioMeetCoreSDKTarget",
 			dependencies: [
 				.target(name: "JioMeetCoreSDK"),
-				.product(name: "RTC", package: "JioMeetRtcEngine_iOS"),
-				.product(name: "RTM", package: "JioMeetRtcEngine_iOS"),
 				.product(name: "JioMeetMediaStackSDK", package: "JioMeetMediaStackSDK")
 			],
 			path: "Framework/Dependency",
