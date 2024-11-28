@@ -14,7 +14,19 @@ Please add `JioMeetCoreSDK_iOS` pod to your podfile and run `pod install --repo-
 target 'Your_App_Name' do
   use_frameworks!
   # Other Pods
-  pod 'JioMeetCoreSDK_iOS', '~> 2.7'
+  pod 'JioMeetCoreSDK_iOS', '~> 4.0.5'
+end
+```
+
+Note: Please add below post install script in podfile before installing pods
+
+```swift
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+    end
+  end
 end
 ```
 
